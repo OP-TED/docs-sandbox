@@ -179,50 +179,76 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Insert image:</p>
-</li>
-</ol>
+<div class="sect1">
+<h2 id="_insert_image"><a class="anchor" href="#_insert_image"></a>Insert image</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">image:coffee.jpg[]</code></pre>
+</div>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="_images/coffee.jpg" alt="coffee"></span></p>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Insert partial:
-Unresolved include directive in modules/ROOT/pages/syntax.adoc - include::partial$partialname.adoc[]</p>
-</li>
-<li>
-<p>Insert attachment:
-<a href="#attachment$attachmentname.pdf" class="xref unresolved">attachment$attachmentname.pdf</a></p>
-</li>
-<li>
-<p>Insert and example:
-Unresolved include directive in modules/ROOT/pages/syntax.adoc - include::example$examplename.js[]</p>
-</li>
-<li>
-<p>Antora.yml file:</p>
-</li>
-</ol>
 </div>
-<div class="paragraph">
-<p>name: EPO
+</div>
+<div class="sect1">
+<h2 id="_insert_partial"><a class="anchor" href="#_insert_partial"></a>Insert partial</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">include::partial$partialname.adoc[]</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_insert_attachment"><a class="anchor" href="#_insert_attachment"></a>Insert attachment</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">xref:attachment$attachmentname.pdf[]</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_insert_and_example"><a class="anchor" href="#_insert_and_example"></a>Insert and example</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">include::example$examplename.js[]</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_antora_yml_file"><a class="anchor" href="#_antora_yml_file"></a>Antora.yml file</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">name: EPO
 version: 3.1
 title: eProcurement Ontology
 display_version: 3.1.0
 start_page: ROOT:index.adoc
 nav:
-  - modules/ROOT/nav.adoc</p>
+  - modules/ROOT/nav.adoc</code></pre>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>"Latest" correction when url not found:</p>
-</li>
-</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_latest_correction_when_url_not_found"><a class="anchor" href="#_latest_correction_when_url_not_found"></a>"Latest" correction when url not found</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">ifeval::[{epo_latest_version} == {page-component-version}]
+\:page-aliases: 3.1.0@index.adoc,3.1@index.adoc
+endif::[]</code></pre>
+</div>
+</div>
+</div>
 </div>
 </article>
   </div>
