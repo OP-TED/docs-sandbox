@@ -4,13 +4,11 @@
 --
 
 [.tile]
-. Training Pages
+.Training Pages
 ****
 Here are the Training Docs
 
 <<training:ROOT:index.adoc#, Access your training docs>>
 ****
-
-
 
 --
