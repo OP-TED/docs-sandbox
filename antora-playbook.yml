@@ -44,9 +44,9 @@ content:
     branches: HEAD
   
   ### Training Docs
-  #- url: https://github.com/OP-TED/training-docs.git
-  #  start_path: /
-  #  branches:  main # The "main" branch 
+  - url: https://github.com/OP-TED/training-docs.git
+    start_path: /
+    branches:  main, v1.0.0, v2.0.0 # The "main" branch 
 
 urls:
   redirect_facility: static
