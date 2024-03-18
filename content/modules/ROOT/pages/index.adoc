@@ -4,9 +4,9 @@
 --
 
 [.tile]
-.Version 1.0.0 Training Pages
+. Training Pages
 ****
-Here are the V1.0.0 Training Docs
+Here are the Training Docs
 
 <<training:ROOT:index.adoc#, Access your training docs>>
 ****
