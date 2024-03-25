@@ -4,5 +4,5 @@
 * xref:training::index.adoc[Training Documents]
 
 * [.separated]#**eProcurement Ontology**#
-* xref:epo-home::index.adoc[ePO Docs `{epo_latest_version}`]
+* xref:EPO::index.adoc[ePO Docs `{epo_latest_version}`]
 * xref:epo-wgm::index.adoc[Working Group Meetings]
