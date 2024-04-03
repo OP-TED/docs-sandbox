@@ -8,15 +8,7 @@
 ****
 Here are the V1.0.0 Training Docs
 
-<<v1.0.0:ROOT:index.adoc#, Read the v1.0.0 docs>>
-****
-
-[.tile]
-.Version 2.0.0 Training Pages
-****
-Here are the V2.0.0 Training Docs
-
-<<v2.0.0:ROOT:index.adoc#, Read the v2.0.0 docs>>
+<<training:ROOT:index.adoc#, Read the docs>>
 ****
 
 --
