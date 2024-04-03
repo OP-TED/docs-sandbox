@@ -16,7 +16,7 @@ if [[ $RESULT -ne 0 ]]; then
 
 fi
 
-EFORMS_PROXY_URL=http://paterni:J0n3s0055_M44h@proxy-t2-lu.welcome.ec.europa.eu:8012
+EFORMS_PROXY_URL=http://<username>:<password>J@proxy-t2-lu.welcome.ec.europa.eu:8012
 
 if [[ -z "${EFORMS_PROXY_URL}" ]]; then
 
