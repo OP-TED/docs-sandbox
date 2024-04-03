@@ -50,9 +50,9 @@ content:
     branches:  main, v1.0.0 #, v2.0.0
 
   ### ePO Documentation
-  - url: https://github.com/OP-TED/epo-docs.git
-    start_path: /
-    branches: history_update, v*, wg-meetings  
+  #- url: https://github.com/OP-TED/epo-docs.git
+  #  start_path: /
+  #  branches: history_update, v*, wg-meetings  
 
 urls:
   redirect_facility: static
