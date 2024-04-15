@@ -11,4 +11,11 @@ Here are the V1.0.0 Training Docs
 <<training:ROOT:index.adoc#, Read the docs>>
 ****
 
+[.tile]
+.Version 2.0.0 Training Pages
+****
+Here are the V2.0.0 Training Docs
+
+<<training:ROOT:index.adoc#, Read the docs>>
+****
 --
