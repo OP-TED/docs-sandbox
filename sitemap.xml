@@ -4,6 +4,9 @@
 <loc>https://docs.ted.europa.eu/sitemap-home.xml</loc>
 </sitemap>
 <sitemap>
+<loc>https://docs.ted.europa.eu/sitemap-m2o-home.xml</loc>
+</sitemap>
+<sitemap>
 <loc>https://docs.ted.europa.eu/sitemap-training.xml</loc>
 </sitemap>
 </sitemapindex>
