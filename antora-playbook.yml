@@ -49,6 +49,11 @@ content:
     start_path: /
     branches:  v1.0.0, materials
 
+  ### model2owl OP
+  - url: https://github.com/OP-TED/ted-model2owl-docs.git
+    start_path: / 
+    branches: cristian_review  # main  
+
   ### ePO Documentation
   #- url: https://github.com/OP-TED/epo-docs.git
   #  start_path: /
