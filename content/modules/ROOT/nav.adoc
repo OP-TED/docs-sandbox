@@ -3,6 +3,9 @@
 * [.separated]#**Training Environment**#
 * xref:training::index.adoc[Training Documents]
 
+* [.separated]#**model2owl**#
+* xref:m2o-home::index.adoc[model2owl]
+
 ////
 * [.separated]#**eProcurement Ontology**#
 * xref:EPO::index.adoc[ePO Docs `{epo_latest_version}`]
