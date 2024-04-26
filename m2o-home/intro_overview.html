@@ -185,19 +185,50 @@
 <p>The creation of the  <a href="https://docs.ted.europa.eu/epo-home/ePO_Arch_Design.html">eProcurement Ontology</a> is achieved through collaborative discussions and consensus among various experts in the procurement domain to develop a conceptual model, while the tangible outcomes of the eProcurement Ontology, comprising an OWL-expressed ontology, a series of SHACL shapes, and a glossary, are typically developed by semantic web specialists.</p>
 </div>
 <div class="paragraph">
-<p>In the <a href="https://docs.ted.europa.eu/epo-home/ePO_Arch_Design.html">planning and development</a> of the eProcurement Ontology Project, it was decided to represent the conceptual model in Unified Modelling Language (UML). UML is a language that represents concepts visually, thereby facilitating understanding and a common conceptualisation of the model amongst different stakeholders.</p>
+<p>In the <a href="https://docs.ted.europa.eu/epo-home/ePO_Arch_Design.html">planning and development</a> of the eProcurement Ontology Project, it was decided to represent the conceptual model in Unified Modelling Language (UML). UML is a language that represents concepts visually, thereby facilitating participation,  discussion, and a common conceptualisation of the model amongst different stakeholders:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Buyers, such as public administrations in the EU Member States or EU institutions;</p>
+</li>
+<li>
+<p>Economic operators, i.e., suppliers of goods and services such as businesses, entrepreneurs and financial institutions;</p>
+</li>
+<li>
+<p>Academia and researchers;</p>
+</li>
+<li>
+<p>Media and journalists;</p>
+</li>
+<li>
+<p>Auditors and regulators;</p>
+</li>
+<li>
+<p>Members of parliaments at regional, national and EU level;</p>
+</li>
+<li>
+<p>Standardisation organisations;</p>
+</li>
+<li>
+<p>NGOs; and</p>
+</li>
+<li>
+<p>Citizens</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p><a href="https://github.com/OP-TED/model2owl">model2owl</a> is a project which can be implemented in different cases to generate a semantic data specification. In the case of the ePO, is a specific implementation which is used to generate a semantic data specification (an OWL-expressed ontology, a series of SHACL shapes, and a glossary) from the ePO conceptual model. An open source <a href="https://github.com/OP-TED/model2owl">reference implementation</a> is available here.</p>
 </div>
 <div class="paragraph">
-<p><strong>model2owl</strong> adheres to <a href="https://semiceu.github.io/style-guide/1.0.0/index.html">semantic conventions</a>, which enables operation within a unified UML model. The model serves as the input source, and the model2owl provides processes that automate the production of the specification artifacts. In the automated processes, human readable UML input has sets of modelling conventions, transformation rules, and methods of verification applied to it before the output glossary, OWL ontology, and SHACL shapes are generated.</p>
+<p><strong>model2owl</strong> adheres to <a href="https://semiceu.github.io/style-guide/1.0.0/index.html">semantic conventions</a>, which enables operation within a unified UML model. The model serves as the input source, and the model2owl provides processes that automate the production of the specification artifacts. In the automated processes, human readable UML input has sets of modelling conventions, transformation rules, and methods of verification applied to it before the output artifacts are generated.</p>
 </div>
 <div class="paragraph">
 <p>Having a single source of truth and automating artifact generation significantly reduces administrative overhead in each development cycle.</p>
 </div>
 <div class="paragraph">
-<p>The output artifacts are defined by the <a href="https://semiceu.github.io/style-guide/1.0.0/terminological-clarifications.html#sec:what-is-a-semantic-data-specification">semic conventions</a> as a specification, the significance of which is that it ensures that all relevant stakeholders generate data that adheres to the agreed model. The data is structured in the form of a graph that follows <a href="https://semiceu.github.io/style-guide/1.0.0/style-guide-whole.html#sec:pc-r1">Linked Data</a> principles.</p>
+<p>The output artifacts are defined by the <a href="https://semiceu.github.io/style-guide/1.0.0/terminological-clarifications.html#sec:what-is-a-semantic-data-specification">semic conventions</a> as a specification, the significance of which is that it ensures that all stakeholders generate data that adheres to the agreed model. The data is structured in the form of a graph that follows <a href="https://semiceu.github.io/style-guide/1.0.0/style-guide-whole.html#sec:pc-r1">Linked Data</a> principles.</p>
 </div>
 </div>
 </div>
@@ -206,6 +237,9 @@
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_the_process_overview"><a class="anchor" href="#_the_process_overview"></a>The Process Overview</h3>
+<div class="paragraph">
+<p>The image below illustrates the high-level process.</p>
+</div>
 <div class="imageblock">
 <div class="content">
 <img src="_images/m2o2.jpg" alt="m2o2">
@@ -217,19 +251,13 @@
 </div>
 <div class="sect2">
 <h3 id="_the_detailed_process"><a class="anchor" href="#_the_detailed_process"></a>The Detailed Process</h3>
+<div class="paragraph">
+<p>The detailed process below illustrates the steps or actions in the generation starting with changes made to the conceptual model and ending with the data specification.</p>
+</div>
 <div class="imageblock">
 <div class="content">
 <img src="_images/m2o3.png" alt="m2o3">
 </div>
-</div>
-<div class="paragraph">
-<p>To generate machine-readable OWL (core and restriction) files and SHACL shapes, the model2owl tool does the following:</p>
-</div>
-<div class="paragraph">
-<p>It takes the human-readable input in UML form, and in an automated conversion process, applies sets of modelling conventions, transformation rules, and methods of verification to it before generating the output.</p>
-</div>
-<div class="paragraph">
-<p>The output artifacts are defined by the <a href="https://semiceu.github.io/style-guide/1.0.0/terminological-clarifications.html#sec:what-is-a-semantic-data-specification">semic conventions</a> as a specification, the significance of which is that it ensures that all relevant stakeholders generate data that adheres to the agreed model. The data is structured in the form of a graph that follows <a href="https://semiceu.github.io/style-guide/1.0.0/style-guide-whole.html#sec:pc-r1">Linked Data</a> principles.</p>
 </div>
 </div>
 </div>
@@ -302,38 +330,7 @@
 <p>In short, model2owl is used to generate a semantic data specification from the ePO conceptual model. An open source <a href="https://github.com/OP-TED/model2owl">reference implementation</a> is available here.</p>
 </div>
 <div class="paragraph">
-<p>The eProcurement ontology is represented in the human-readable form of a UML conceptual model. Working with the model in this form allows participation in, and discussion between, the following stakeholders, both technical and non-technical:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Contracting authorities and entities, i.e., buyers, such as public administrations in the EU Member States or EU institutions;</p>
-</li>
-<li>
-<p>Economic operators, i.e., suppliers of goods and services such as businesses, entrepreneurs and financial institutions;</p>
-</li>
-<li>
-<p>Academia and researchers;</p>
-</li>
-<li>
-<p>Media and journalists;</p>
-</li>
-<li>
-<p>Auditors and regulators;</p>
-</li>
-<li>
-<p>Members of parliaments at regional, national and EU level;</p>
-</li>
-<li>
-<p>Standardisation organisations;</p>
-</li>
-<li>
-<p>NGOs; and</p>
-</li>
-<li>
-<p>Citizens</p>
-</li>
-</ul>
+<p>The eProcurement ontology is represented in the human-readable form of a UML conceptual model.</p>
 </div>
 <div class="paragraph">
 <p>To facilitate the digitisation of eProcurement, a machine-readable form of the conceptual model must be produced: the model needs to be converted/ translated into machine-readable OWL files and SHACL shapes.
