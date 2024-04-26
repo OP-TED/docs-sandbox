@@ -188,16 +188,13 @@
 <p>In the <a href="https://docs.ted.europa.eu/epo-home/ePO_Arch_Design.html">planning and development</a> of the eProcurement Ontology Project, it was decided to represent the conceptual model in Unified Modelling Language (UML). UML is a language that represents concepts visually, thereby facilitating understanding and a common conceptualisation of the model amongst different stakeholders.</p>
 </div>
 <div class="paragraph">
-<p><a href="https://github.com/OP-TED/model2owl">model2owl</a> is a project, which, in the case of the ePO, is a specific implementation which, in terms , is used to generate a semantic data specification from the ePO conceptual model. An open source <a href="https://github.com/OP-TED/model2owl">reference implementation</a> is available here.</p>
+<p><a href="https://github.com/OP-TED/model2owl">model2owl</a> is a project which can be implemented in different cases to generate a semantic data specification. In the case of the ePO, is a specific implementation which is used to generate a semantic data specification (an OWL-expressed ontology, a series of SHACL shapes, and a glossary) from the ePO conceptual model. An open source <a href="https://github.com/OP-TED/model2owl">reference implementation</a> is available here.</p>
 </div>
 <div class="paragraph">
-<p>model2owl is a tool that takes the UML as input converts it automatically into produces</p>
+<p><strong>model2owl</strong> adheres to <a href="https://semiceu.github.io/style-guide/1.0.0/index.html">semantic conventions</a>, which enables operation within a unified UML model. The model serves as the input source, and the model2owl provides processes that automate the production of the specification artifacts. In the automated processes, human readable UML input has sets of modelling conventions, transformation rules, and methods of verification applied to it before the output glossary, OWL ontology, and SHACL shapes are generated.</p>
 </div>
 <div class="paragraph">
-<p><strong>model2owl</strong> adheres to <a href="https://semiceu.github.io/style-guide/1.0.0/index.html">semantic conventions</a>, which enables operation within a unified UML model. This model serves as the single source of truth, and through automated processes, essential artifacts such as a glossary, an OWL ontology, and SHACL shapes can be generated. Embracing a single source of truth, and automating artifact generation, significantly reduces administrative overhead in each development cycle.</p>
-</div>
-<div class="paragraph">
-<p>To generate machine-readable OWL (core and restriction) files and SHACL shapes, the model2owl tool takes the human-readable input in UML form and in an automated conversion process applies sets of modelling conventions, transformation rules, and methods of verification to it before generating the output.</p>
+<p>Having a single source of truth and automating artifact generation significantly reduces administrative overhead in each development cycle.</p>
 </div>
 <div class="paragraph">
 <p>The output artifacts are defined by the <a href="https://semiceu.github.io/style-guide/1.0.0/terminological-clarifications.html#sec:what-is-a-semantic-data-specification">semic conventions</a> as a specification, the significance of which is that it ensures that all relevant stakeholders generate data that adheres to the agreed model. The data is structured in the form of a graph that follows <a href="https://semiceu.github.io/style-guide/1.0.0/style-guide-whole.html#sec:pc-r1">Linked Data</a> principles.</p>
