@@ -116,7 +116,7 @@
     <span class="nav-text"><span class="separated"><strong>Performing Transformations</strong></span></span>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../performing.html">Performing Transformations: Two Methods</a>
+    <a class="nav-link" href="../performing.html">model2owl transformations on the ePO</a>
   </li>
 </ul>
   </li>
@@ -195,7 +195,7 @@
 <p>The set of guidelines is aligned with the <a href="https://joinup.ec.europa.eu/collection/semic-support-centre/news/release-semic-style-guide#:~:text=The%20SEMIC%20Style%20Guide%20is%20a%20document%20that,expert%20advice%20on%20semantic%20interoperability%20for%20public%20administrations">SEMIC style guide</a>, extending and elaborating on it.</p>
 </div>
 <div class="paragraph">
-<p>The guidelines provided here may be of general or technical nature. They are formulated to be understood easily by semantic engineers, to allow the implementation of automatic model checkers (see Section <a href="../checkers/model2owl-checkers.html" class="xref page">UML Convention checker inventory</a>) and the definition of precise transformation rules used by tools, to generate the semantic artefacts automatically (see Section <a href="../transformation/uml2owl-transformation.html" class="xref page">Transformation of the UML model into the Semantic Data Specification</a>).</p>
+<p>The guidelines provided here may be of general or technical nature. They are formulated to be understood easily by semantic engineers, to allow the implementation of automatic model checkers (see Section <a href="../checkers/model2owl-checkers.html" class="xref page">UML Convention checker inventory</a>) and the definition of precise transformation rules used by the tools to generate the semantic artefacts automatically (see Section <a href="../transformation/uml2owl-transformation.html" class="xref page">Transformation of the UML model into the Semantic Data Specification</a>).</p>
 </div>
 <div class="paragraph">
 <p>The convention are organised into the following subsections:</p>
@@ -585,8 +585,11 @@ Attributes and connector names shall contain a verb. Apply certain, well establi
 <div class="paragraph">
 <p><strong>See also:</strong> SEMIC Style Guide Rule [<a href="https://semiceu.github.io/style-guide/1.0.0/gc-general-conventions.html#sec:gc-r4">GC-R4</a>]</p>
 </div>
-<div class="sect2">
-<h3 id="sec:descriptions"><a class="anchor" href="#sec:descriptions"></a>Notes, descriptions and comments</h3>
+</div>
+</div>
+<div class="sect1">
+<h2 id="sec:descriptions"><a class="anchor" href="#sec:descriptions"></a>Notes, descriptions and comments</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>A large emphasis is set on the naming conventions, however, more often than not, a good name is insufficient for an accurate or easy comprehension by human-readers. To address this, and to increase the conceptual richness, practitioners may wish to provide human-readable definitions, notes, examples and comments clarifying the underlying assumptions,and providing usage examples, additional explanations and other types of information.</p>
 </div>
@@ -682,7 +685,6 @@ All elements must have a definition providing a concise but complete description
 </div>
 <div class="paragraph">
 <p><strong>See also:</strong> SEMIC Style Guide Rule [<a href="https://semiceu.github.io/style-guide/1.0.0/gc-general-conventions.html#sec:gc-r5">GC-R5</a>], which provides more recommendations to be followed here.</p>
-</div>
 </div>
 </div>
 </div>
@@ -942,129 +944,6 @@ UML tags shall be used to provide additional descriptions of the element in a co
 </div>
 <div class="paragraph">
 <p><strong>Note:</strong> Tags should not be used as the sole (or primary) source of concept identifier generation, i.e. every UML element that has tags attached, should, in the first place, have a proper name provided according to the conventions in the [<a href="#sec:names">Naming Conventions</a>] section.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="sec:attributes"><a class="anchor" href="#sec:attributes"></a>Conventional recommendations on Attributes</h2>
-<div class="sectionbody">
-<table id="rule:attributes-names-with-verb" class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Attribute names</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Identifier:</strong> rule:attributes-names-with-verb</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong>
-It is recommended to use a verb in the attribute name, such as "has-" or "is-".</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p><strong>Description:</strong></p>
-</div>
-<div class="paragraph">
-<p>When creating attribute names, the convention is to use simple nouns such as "name", "weight", "colour". Attributes are a special type of relations that describe an entity in terms of its qualities.</p>
-</div>
-<div class="paragraph">
-<p>To comply with the above convention and to increase clarity, it is recommended to employ the prefix "has-" for each attribute, even if it does not add much to the term&#8217;s meaning. Therefore, using terms such as "hasName", "hasWeight" and "hasColour" is preferred.</p>
-</div>
-<div class="paragraph">
-<p>It is recommended to use simple nouns for attribute names prepended with the verb "has-".</p>
-</div>
-<div class="paragraph">
-<p>It is recommended to avoid duplicate attribute names across multiple classes. Unless, by design, attributes with the same name are shared across multiple classes.</p>
-</div>
-<table id="rule:attributes-multiplicity" class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Attribute multiplicity</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Identifier:</strong> rule:attributes-multiplicity</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong>
-Attributes shall be assigned cardinality specifications contextualised to the class carrying them.</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p><strong>Description:</strong></p>
-</div>
-<div class="paragraph">
-<p>Attribute multiplicity should be specified indicating the minimum and maximum cardinality. The default [1] multiplicity shall be interpreted as unspecified, and expressed as [0..*] in the OWL model.</p>
-</div>
-<div class="paragraph">
-<p>In special cases, a list of custom default multiplicities is defined for the transformation script. This means that some data types or classes that are used as attribute types are paired with a default multiplicity, for example "1..1", "0..1", "2..2".</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="sec:attributes-class"><a class="anchor" href="#sec:attributes-class"></a>uml:Class attributes</h2>
-<div class="sectionbody">
-<table id="rule:attributes-datatypes" class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Attribute datatypes</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Identifier:</strong> rule:attributes-datatypes</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong>
-uml:Attribute shall be defined with generally accepted primitive datatypes.</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p><strong>Description:</strong></p>
-</div>
-<div class="paragraph">
-<p>Each uml:Attribute must have a name and an attribute type. uml:Attribute is mostly transformed into owl:DataProperty and in some controlled cases into owl:ObjectProperty. High preference shall be given to using OWL 2 compliant <a href="https://www.w3.org/TR/xmlschema11-2/">XSD</a> and <a href="https://www.w3.org/TR/rdf-syntax-grammar/">RDF</a>  standard datatypes. [<a href="conv-datatypes.html#rule:datatypes-primitive" class="xref page">See convention on Primitive Data types</a>]</p>
-</div>
-<div class="paragraph">
-<p>Cases where a property needs to be defined as ranging on an unknown controlled list or authority table constitute special cases. They can be expressed as uml:Attribute with the datatype <code>skos:Concept</code>. These attributes are transformed into owl:ObjectProperty in a manner similar to uml:Association.</p>
-</div>
-<div class="paragraph">
-<p>An attribute may contain an alias that is used as an alternative label. It can be specified via uml:Tags. [<a href="conv-general.html#rule:gen-tags" class="xref page">See convention on uml:Tags</a>]</p>
-</div>
-<table id="rule:attributes-reuse" class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Attribute name reuse</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Identifier:</strong> rule:attributes-reuse</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong>
-Attribute names can be reused only as attributes in other classes, not as relations.</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p><strong>Description:</strong></p>
-</div>
-<div class="paragraph">
-<p>It is mandatory to avoid using the same name in an attribute and in a relation unless an additional rule that handles intentional exceptions exists.</p>
-</div>
-<div class="paragraph">
-<p>The definition and datatype, and in most cases also the multiplicity, of the attribute should be the same in all classes where it is reused.</p>
 </div>
 </div>
 </div>
