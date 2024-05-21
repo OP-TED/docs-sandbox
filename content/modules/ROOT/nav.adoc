@@ -7,7 +7,7 @@
 * xref:m2o-home::index.adoc[model2owl]
 
 * [.separated]#**eForms**#
-* xref:eforms-docs::index.adoc[eForms]
+* xref:eforms::index.adoc[eForms]
 
 ////
 * [.separated]#**eProcurement Ontology**#
