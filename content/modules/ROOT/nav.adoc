@@ -6,6 +6,9 @@
 * [.separated]#**model2owl**#
 * xref:m2o-home::index.adoc[model2owl]
 
+* [.separated]#**eForms**#
+* xref:eforms-docs::index.adoc[eForms]
+
 ////
 * [.separated]#**eProcurement Ontology**#
 * xref:EPO::index.adoc[ePO Docs `{epo_latest_version}`]
