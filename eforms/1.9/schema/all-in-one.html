@@ -26,39 +26,51 @@
     <script>var uiRootPath = '../../../_'</script>
   </head>
   <body class="article">
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" crossorigin="anonymous"></script>
 <script defer src="https://europa.eu/webtools/load.js?globan=1110" type="text/javascript"></script>
-<header class="header">
-
-        <div class="container">
-<div>
-    <nav class="navbar">
-
+<div class="eu-flag">
+    <nav class="navbar-scrollable">
         <div class="navbar-brand">
 
             <div class="eu-emblem" style="display: inline-block;">
                 <!-- flag and logo-->
-                <div class="eu-emblem-std-en" ><a href="https://european-union.europa.eu/index_en"><span></span></a></div>
-            </div>
+                <a href="https://european-union.europa.eu/index_en" target="_blank">
+                    <div class="eu-emblem-std-en"><span></span>
+                    </div>
+                </a>
 
+            </div>
         </div>
-         <div class="sep-frame">
+        <div class="sep-frame">
             <div class="rect-grey"></div>
         </div>
-        <div class="text-eu-tenders">EU tenders</div>
+    </nav>
 
+</div>
+
+<div class="eu-tenders">
+    <nav class="navbar">
+        <div class="text-eu-tenders">
+            <a href="https://ted.europa.eu/en/" target="_blank">EU tenders</a>
+        </div>
         <div id="topbar-nav" class="navbar-menu">
-                    <div class="text-eu-subtext-text">TED Developer Docs</div>
-                    <div class="text-eu-subtext-label">Documentation for TED developers and eSenders</div>
+
+            <div class="text-eu-subtext-text">
+                <a href="https://docs.ted.europa.eu">TED Developer Documentation</a>
+            </div>
+            <div class="text-eu-subtext-label">
+                <a href="https://docs.ted.europa.eu"></a>
+            </div>
             <div class="navbar-end">
-                    <div class="navbar-item search">
-                        <input id="search-input" type="text" placeholder="Search docs">
-                    </div>
+                <div class="navbar-item search">
+                    <input id="search-input" type="text" placeholder="Search docs">
+                </div>
             </div>
         </div>
     </nav>
-</div><div class="body">
+</div>
+<div class="body">
+<script src="../../../_/js/07-scrollable-header-nav.js"></script>
 <div class="nav-container" data-component="eforms" data-version="1.9">
   <aside class="nav">
     <div class="panels">
@@ -314,14 +326,6 @@
       </ul>
     </li>
     <li class="component">
-      <a class="title" href="../../../m2o-home/index.html">model2owl</a>
-      <ul class="versions">
-        <li class="version is-latest">
-          <a href="../../../m2o-home/index.html">default</a>
-        </li>
-      </ul>
-    </li>
-    <li class="component">
       <a class="title" href="../../../training/latest/index.html">Training Docs</a>
       <ul class="versions">
         <li class="version is-latest">
@@ -362,10 +366,10 @@
 </div>
 </div>
   <div class="content">
-<aside class="toc sidebar" data-title="Contents" data-levels="-1">
+    <aside class="toc sidebar" data-title="Contents" data-levels="-1">
   <div class="toc-menu"></div>
 </aside>
-<article class="doc">
+    <article class="doc">
 <h1 class="page">eForms Schema Usage</h1>
 <div class="sect1">
 <h2 id="disclaimerSection"><a class="anchor" href="#disclaimerSection"></a>Disclaimer</h2>
@@ -1224,7 +1228,7 @@ before, or during, the procurement procedure).</em></p></td>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Procedure Type</p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><em>To provide the type of procedure (e.g.
-"Competitive dialog" &#8230;&#8203;).</em></p></td>
+"Competitive dialogue" &#8230;&#8203;).</em></p></td>
 </tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Dispatch Date</p></th>
@@ -1652,7 +1656,7 @@ specific extension basic components</p></td>
 <div class="sect2">
 <h3 id="versioningSection"><a class="anchor" href="#versioningSection"></a>5.2. Versioning</h3>
 <div class="paragraph">
-<p>Please consult the versioning information provided in detail <a href="#ROOT:versioning.adoc" class="xref unresolved">here</a>.</p>
+<p>Please consult the versioning information provided in detail <a href="../../../eforms-common/versioning/index.html" class="xref page">here</a>.</p>
 </div>
 </div>
 </div>
@@ -6763,7 +6767,7 @@ codelist.</p>
 also be specified.</p>
 </div>
 <div class="paragraph">
-<p>For a competitive dialog, the Procedure Type shall be marked:</p>
+<p>For a competitive dialogue, the Procedure Type shall be marked:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -12736,44 +12740,6 @@ Person</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-middle"></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Not-Tenderer Review Requester</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">M</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock"><strong>M</strong></p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">EM</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">M</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">CM</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">CM</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">M</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-middle"></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Non-contractant review requester</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock"><strong>M</strong></p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock"><strong>M</strong></p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock"><strong>O</strong></p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock"><strong>O</strong></p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock"><strong>O</strong></p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock"><strong>O</strong></p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock"><strong>O</strong></p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock"><strong>O</strong></p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock"><strong>O</strong></p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock"><strong>O</strong></p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock"><strong>O</strong></p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock"><strong>O</strong></p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock"><strong>O</strong></p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock"><strong>O</strong></p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock"><strong>O</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-middle"></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>eSender (#)</strong></p></td>
 <td class="tableblock halign-center valign-middle"><p class="tableblock">M</p></td>
 <td class="tableblock halign-center valign-middle"><p class="tableblock"><strong>M</strong></p></td>
@@ -13470,15 +13436,6 @@ contract is to be performed.</p></td>
 <div class="listingblock">
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-xpath hljs" data-lang="xpath">/*/cac:ProcurementProjectLot&#8203;/cac:TenderingTerms&#8203;/cac:EmploymentLegislationDocumentReference&#8203;/cac:IssuerParty</code></pre>
-</div>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Review Requester</strong></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Organization that requested a review request.</p></td>
-<td class="tableblock halign-left valign-middle"><div class="content"><div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-xpath hljs" data-lang="xpath">/ContractAwardNotice&#8203;/ext:UBLExtensions&#8203;/ext:UBLExtension&#8203;/ext:ExtensionContent&#8203;/efext:EformsExtension&#8203;/efac:AppealsInformation&#8203;/efac:AppealStatus&#8203;/efac:AppealingParty</code></pre>
 </div>
 </div></div></td>
 </tr>
@@ -15554,92 +15511,6 @@ general</strong></p></td>
 <td class="tableblock halign-center valign-middle"><p class="tableblock">M</p></td>
 <td class="tableblock halign-center valign-middle"><p class="tableblock">M</p></td>
 <td class="tableblock halign-center valign-middle"><p class="tableblock">M</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-middle"><p class="tableblock">Not-Tenderer Review Requester</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-middle"><p class="tableblock">Non-contractant review requester</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
-<td class="tableblock halign-center valign-middle"><p class="tableblock">O</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-middle"><p class="tableblock"><strong>eSender (#)</strong></p></td>
@@ -20337,130 +20208,158 @@ Law Insider, Dictionary, Tenderer definition
 </div>
 </div>
 </article>
+    <div id="widgetContainer">
+      <article class="widget">
+<div class="widget-title">
+    <p>Access other sites in the TED family</p>
+  </div>
+  <div class="links">
+    <a href="https://enotices2.ted.europa.eu/" target="_blank">eNotices2</a>
+    <a href="https://developer.ted.europa.eu/" target="_blank">TED Developer Portal</a>
+    <a href="https://ted.europa.eu/" target="_blank">TED Website</a>
+  </div>
+</article>
+    </div>
   </div>
 </main>
-</div>
+
+<script>
+  // Get the current URL
+  var url = window.location.href;
+
+  // Check if the URL ends with 'home/index.html'
+  if (!url.endsWith('/home/index.html')) {
+    // If it doesn't, hide the widget
+    document.getElementById('widgetContainer').style.display = 'none';
+  }
+</script></div>
 <script src="../../../_/js/site.js"></script>
 <script async src="../../../_/js/vendor/highlight.js"></script>
 <script src="../../../_/js/vendor/docsearch-2.6.3.js"></script>
 <script src="../../../_/js/vendor/search-algolia.js" id="search-script" data-api-key="7bd6f4bbe2cb3188cd99f1625cb00f75" data-api-id="BE8MR7O2G7" data-index-name="ted-docs-idx"></script>
-<style type="text/css">@import url('/documents/d/global/custom');</style>
+<style type="text/css">
+    @import url('/documents/d/global/custom');
+</style>
 
 <div class="footer">
-  <div class="three-columns">
+    <div class="three-columns">
 
-      <div class="col-md-12 col-lg-4">
-          <div class="ls-footer-logo-DD"><a href="https://docs.ted.europa.eu/home/index.html"><img alt="TED Developer Docs" class="ls-op" src="../../../_/img/ted-logo-footer2.png" height="48"/></a></div>
-      </div>
+        <div class="col-md-12 col-lg-4">
+            <div class="ls-footer-logo-DD"><a href="https://docs.ted.europa.eu/home/index.html"><img
+                        alt="TED Developer Docs" class="ls-op" src="../../../_/img/ted-logo-footer2.png"
+                        height="48" /></a></div>
+            <span class="ted-footer__title ted-footer__title--main"></span>
+            <div class="ted-footer__rich-text">
+                <p>This website is managed by:
+                    <u>
+                        <a href="https://op.europa.eu/en/home" target="_blank">Publications Office of the European
+                            Union</a>
+                    </u>
+                </p>
 
-      <div class="col-md-12 col-lg-4">
+            </div>
+        </div>
 
-          <h3 class="h3-footer">Need Help?</h3>
-          <ul class="ul-footer">
-              <li class="li-footer"><a href="https://ted.europa.eu/en/help-page">Help</a></li>
-              <li class="li-footer"><a href="https://simap.ted.europa.eu/contact">Contact the TED Helpdesk</a></li>
-          </ul>
+        <div class="col-md-12 col-lg-4">
 
-          <h3 class="h3-footer">Follow us</h3>
-          <ul class="ul-footer">
-              <li>
-                  <a href="https://twitter.com/eulawdatapubs"> <img src="../../../_/img/twitter.svg" class="icon-footer"/><span>Twitter</span></a>
-                  <a href="https://www.youtube.com/playlist?list=PLT5rARDev_rkQdFimoHlpv2Och1H0uBLs"><img src="../../../_/img/youtube.svg" class="icon-footer-2nd"/><span>YouTube</span></a>
-              </li>
-          </ul>
+            <h3 class="ted-footer__title">Need Help?</h3>
+            <ul class="ul-footer">
+                <li class="li-footer"><a href="https://ted.europa.eu/en/help-page">Help</a></li>
+                <li class="li-footer"><a href="https://ted.europa.eu/en/contact">Contact the TED Helpdesk</a></li>
+            </ul>
 
-          <h3 class="h3-footer">Legal</h3>
-          <ul class="ul-footer">
-              <li class="li-footer"><a href="https://op.europa.eu/en/web/about-us/legal-notices/accessibility-statement">Accessibility</a></li>
-          </ul>
+            <h3 class="ted-footer__title">Follow us</h3>
+            <ul class="ul-footer">
+                <li class="li-footer">
+                    <a href="https://twitter.com/EUTenders"> <img src="../../../_/img/twitter.svg"
+                            class="icon-footer" /><span>X/Twitter</span></a>
+                    <a href="https://www.youtube.com/playlist?list=PLT5rARDev_rkQdFimoHlpv2Och1H0uBLs"><img
+                            src="../../../_/img/youtube.svg" class="icon-footer-2nd" /><span>YouTube</span></a>
+                </li>
+            </ul>
 
-      </div>
+            <h3 class="ted-footer__title">Legal</h3>
+            <ul class="ul-footer">
+                <li class="li-footer"><a href="https://ted.europa.eu/en/legal-notice" target="_blank">Legal Notice</a>
+                </li>
+                <li class="li-footer"><a href="https://ted.europa.eu/en/cookie-choice" target="_blank">Cookies</a>
+                </li>
+                <li class="li-footer"><a
+                        href="https://ted.europa.eu/en/accessibility"
+                        target="_blank">Accessibility</a>
+                </li>
+            </ul>
 
-      <div class="col-md-12 col-lg-4">
+        </div>
 
-          <h3 class="h3-footer">About us</h3>
-          <ul class="ul-footer">
-              <li class="li-footer"><a href="https://op.europa.eu/en/web/about-us/about-publication-office-of-the-european-union">Our mission, vision, and values</a></li>
-              <li class="li-footer"><a href="https://op.europa.eu/en/web/general-publications/">Newsletter</a></li>
-          </ul>
+        <div class="col-md-12 col-lg-4">
 
-          <h3 class="h3-footer">Other services</h3>
-          <ul class="ul-footer">
-              <li class="li-footer"><a href="https://ted.europa.eu/TED/main/HomePage.do">EU tenders</a></li>
-              <li class="li-footer"><a href="https://data.europa.eu/en">European data</a></li>
-              <li class="li-footer"><a href="https://op.europa.eu/en/web/eu-vocabularies">EU vocabularies</a></li>
-              <li class="li-footer"><a href="https://cordis.europa.eu/">EU research results</a></li>
-              <li class="li-footer"><a href="https://op.europa.eu/en/web/who-is-who">EU Whoiswho</a></li>
-              <li class="li-footer"><a href="/web/librarians-corner">EU publications</a></li>
-          </ul>
-      </div>
-  </div>
+            <h3 class="ted-footer__title">About us</h3>
+            <ul class="ul-footer">
+                <li class="li-footer"><a href="https://ted.europa.eu/">About TED</a></li>
+            </ul>
 
-  <div class="three-columns">
-      <div class="col-md-12 col-lg-4">
-          <!--<h2 class="sr-only" id="section-title-op">Publications Office of the European Union</h2> -->
+            <h3 class="ted-footer__title">Other services</h3>
+            <ul class="ul-footer">
+                <li class="li-footer"><a href="https://ted.europa.eu/TED/main/HomePage.do">EU tenders</a></li>
+                <li class="li-footer"><a href="https://data.europa.eu/en">European data</a></li>
+                <li class="li-footer"><a href="https://op.europa.eu/en/web/eu-vocabularies">EU vocabularies</a></li>
+                <li class="li-footer"><a href="https://cordis.europa.eu/">EU research results</a></li>
+                <li class="li-footer"><a href="https://op.europa.eu/en/web/who-is-who">EU Whoiswho</a></li>
+                <li class="li-footer"><a href="/web/librarians-corner">EU publications</a></li>
+            </ul>
+        </div>
+    </div>
 
-          <div class="ls-footer-logo"><a aria-labelledby="section-title-op" href="/"><img alt="European Union" class="ls-op" /></a></div>
-          <p class="byline-footer">Discover more on <a class="ls-underline" href="https://europa.eu/en/home"><span style="word-break: keep-all; white-space: nowrap; text-decoration: underline!important">europa.eu</span></a></p>
-          <div style="margin-top: 20px" >
-            <h3>This website is managed by<h3>
-            <img src="../../../_/img/op-logo-with-name.svg" class="logo" />
-          </div>
+    <div class="three-columns">
+        <div class="col-md-12 col-lg-4">
+            <!--<h2 class="sr-only" id="section-title-op">Publications Office of the European Union</h2> -->
 
-      </div>
-      <div class="col-md-12 col-lg-4">
-          <h3 class="h3-footer">Contact the EU</h3>
+            <div class="ls-footer-logo"><a aria-labelledby="section-title-op" href="/"><img alt="European Union"
+                        class="ls-op" /></a></div>
+            <span class="ted-footer__title ted-footer__title--main"></span>
+           
+            <div class="ted-footer__rich-text">
+                <p class="byline-footer">Discover more on <a class="ls-underline" href="https://europa.eu/en/home"><span
+                            style="word-break: keep-all; white-space: nowrap; text-decoration: underline!important">europa.eu</span></a>
+                </p>
 
-          <ul class="ul-footer">
-              <li class="li-footer"><a href="tel:0080067891011">Call us 00 800 6 7 8 9 10 11</a></li>
-              <li class="li-footer"><a href="https://european-union.europa.eu/contact-eu/call-us_en">Use other Telephone options</a></li>
-              <li class="li-footer"><a href="https://european-union.europa.eu/contact-eu/write-us_en">Write to us via our contact forms</a></li>
-              <li class="li-footer"><a href="https://european-union.europa.eu/contact-eu/meet-us_en">Meet us at one of the EU centres</a></li>
+            </div>
+        </div>
+        <div class="col-md-12 col-lg-4">
+            <h3 class="ted-footer__title">Contact the EU</h3>
 
-          </ul>
+            <ul class="ul-footer">
+                <li class="li-footer"><a href="tel:0080067891011">Call us 00 800 6 7 8 9 10 11</a></li>
+                <li class="li-footer"><a href="https://european-union.europa.eu/contact-eu/call-us_en">Use other
+                        Telephone options</a></li>
+                <li class="li-footer"><a href="https://european-union.europa.eu/contact-eu/write-us_en">Write to us via
+                        our contact forms</a></li>
+                <li class="li-footer"><a href="https://european-union.europa.eu/contact-eu/meet-us_en">Meet us at one of
+                        the EU centres</a></li>
 
-          <h3 class="h3-footer">Social Media</h3>
-          <ul class="ul-footer">
-              <li class="li-footer"><a href="https://european-union.europa.eu/contact-eu/social-media-channels_en#/search"><i aria-hidden="true" class="gs-icon-twitter"></i>Search of EU social media channels</a></li>
+            </ul>
 
-          </ul>
+        </div>
+        <div class="col-md-12 col-lg-4">
+             <h3 class="ted-footer__title">Social Media</h3>
+            <ul class="ul-footer">
+                <li class="li-footer"><a
+                        href="https://european-union.europa.eu/contact-eu/social-media-channels_en#/search"><i
+                            aria-hidden="true" class="gs-icon-twitter"></i>Search of EU social media channels</a></li>
 
-          <h3 class="h3-footer">Legal</h3>
+            </ul>
+            <h3 class="ted-footer__title">EU institutions and bodies</h3>
 
-          <ul class="ul-footer">
-              <li class="li-footer"><a aria-labelledby="section-title-op" href="https://european-union.europa.eu/languages-our-websites_en">Languages on our website</a></li>
-              <li class="li-footer"><a aria-labelledby="section-title-op" href="https://european-union.europa.eu/privacy-policy-european-union-website_en">Privacy Policy</a></li>
-              <li class="li-footer"><a aria-labelledby="section-title-op" href="https://european-union.europa.eu/legal-notice_en">Legal notice</a></li>
-              <li class="li-footer"><a aria-labelledby="section-title-op" href="https://european-union.europa.eu/cookies_en">Cookies</a></li>
-          </ul>
-      </div>
-      <div class="col-md-12 col-lg-4">
-          <h3 class="h3-footer">EU institutions</h3>
+            <ul class="ul-footer">
+                <li class="li-footer institutions"><a href="https://european-union.europa.eu/institutions-law-budget/institutions-and-bodies/search-all-eu-institutions-and-bodies_en">Search all EU institutions and bodies</a></li>
+               
+            </ul>
+        </div>
 
-          <ul class="ul-footer">
-              <li class="li-footer"><a href="https://www.europarl.europa.eu/portal/en">European Parliament</a></li>
-              <li class="li-footer"><a href="https://www.consilium.europa.eu/en/european-council/">European Council</a></li>
-              <li class="li-footer"><a href="https://www.consilium.europa.eu/en/">Council of the European Union</a></li>
-              <li class="li-footer"><a href="https://commission.europa.eu/index_en">European Commission</a></li>
-              <li class="li-footer"><a href="https://curia.europa.eu/jcms/jcms/j_6/en/">Court of Justice of the European Union (CJEU)</a></li>
-              <li class="li-footer"><a href="https://www.ecb.europa.eu/home/html/index.en.html">European Central Bank (ECB)</a></li>
-              <li class="li-footer"><a href="http://www.eca.europa.eu/en">European Court of Auditors (ECA)</a></li>
-              <li class="li-footer"><a href="https://www.eeas.europa.eu/_en">European External Action Services (EEAS)</a></li>
-              <li class="li-footer"><a href="https://www.eesc.europa.eu/en">European Economic and Social Committee (EESC)</a></li>
-              <li class="li-footer"><a href="https://cor.europa.eu/en/">European Committee of the Regions (CoR)</a></li>
-              <li class="li-footer"><a href="https://www.eib.org/en/index.htm">European Investment Bank (EIB)</a></li>
-              <li class="li-footer"><a href="https://www.ombudsman.europa.eu/en/home">European Ombudsman</a></li>
-              <li class="li-footer"><a href="https://edps.europa.eu/_en?lang=en">European Data Protection Supervisor (EDPS)</a></li>
-              <li class="li-footer"><a href="https://edpb.europa.eu/edpb_en">European Data protection Board</a></li>
-              <li class="li-footer"><a href="https://eu-careers.europa.eu/en">European Personnel Selection Office</a></li>
-              <li class="li-footer"><a href="https://op.europa.eu/en/home">Publications Office of the European Union</a></li>
-              <li class="li-footer"><a href="https://european-union.europa.eu/institutions-law-budget/institutions-and-bodies/search-all-eu-institutions-and-bodies_en?f%5B0%5D=oe_organisation_eu_type%3Ahttp%3A//publications.europa.eu/resource/authority/corporate-body-classification/AGENCY_DEC&f%5B1%5D=oe_organisation_eu_type%3Ahttp%3A//publications.europa.eu/resource/authority/corporate-body-classification/AGENCY_EXEC&f%5B2%5D=oe_organisation_eu_type%3Ahttp%3A//publications.europa.eu/resource/authority/corporate-body-classification/EU_JU">Agencies</a></li>
-          </ul>
-      </div>
-
-      <script>
-        ECL.autoInit();
-      </script>
-  </div>
+        <script>
+            ECL.autoInit();
+        </script>
+    </div>
 </div>  </body>
 </html>

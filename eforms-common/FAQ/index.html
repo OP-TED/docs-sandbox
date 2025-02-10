@@ -26,39 +26,51 @@
     <script>var uiRootPath = '../../_'</script>
   </head>
   <body class="article">
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" crossorigin="anonymous"></script>
 <script defer src="https://europa.eu/webtools/load.js?globan=1110" type="text/javascript"></script>
-<header class="header">
-
-        <div class="container">
-<div>
-    <nav class="navbar">
-
+<div class="eu-flag">
+    <nav class="navbar-scrollable">
         <div class="navbar-brand">
 
             <div class="eu-emblem" style="display: inline-block;">
                 <!-- flag and logo-->
-                <div class="eu-emblem-std-en" ><a href="https://european-union.europa.eu/index_en"><span></span></a></div>
-            </div>
+                <a href="https://european-union.europa.eu/index_en" target="_blank">
+                    <div class="eu-emblem-std-en"><span></span>
+                    </div>
+                </a>
 
+            </div>
         </div>
-         <div class="sep-frame">
+        <div class="sep-frame">
             <div class="rect-grey"></div>
         </div>
-        <div class="text-eu-tenders">EU tenders</div>
+    </nav>
 
+</div>
+
+<div class="eu-tenders">
+    <nav class="navbar">
+        <div class="text-eu-tenders">
+            <a href="https://ted.europa.eu/en/" target="_blank">EU tenders</a>
+        </div>
         <div id="topbar-nav" class="navbar-menu">
-                    <div class="text-eu-subtext-text">TED Developer Docs</div>
-                    <div class="text-eu-subtext-label">Documentation for TED developers and eSenders</div>
+
+            <div class="text-eu-subtext-text">
+                <a href="https://docs.ted.europa.eu">TED Developer Documentation</a>
+            </div>
+            <div class="text-eu-subtext-label">
+                <a href="https://docs.ted.europa.eu"></a>
+            </div>
             <div class="navbar-end">
-                    <div class="navbar-item search">
-                        <input id="search-input" type="text" placeholder="Search docs">
-                    </div>
+                <div class="navbar-item search">
+                    <input id="search-input" type="text" placeholder="Search docs">
+                </div>
             </div>
         </div>
     </nav>
-</div><div class="body">
+</div>
+<div class="body">
+<script src="../../_/js/07-scrollable-header-nav.js"></script>
 <div class="nav-container" data-component="eforms-common" data-version="">
   <aside class="nav">
     <div class="panels">
@@ -69,19 +81,25 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item is-current-page" data-depth="1">
-    <a class="nav-link" href="index.html">Frequently Asked Questions</a>
-  </li>
-  <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../preview/index.html">Preview Environment</a>
+    <a class="nav-link" href="index.html">eForms FAQ</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../roadmap/index.html">SDK Roadmap</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../active-versions/index.html">Active SDK Versions</a>
+    <a class="nav-link" href="../articles/eforms-change-management.html">eForms Change Management</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../versioning/index.html">SDK Versioning</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../active-versions/index.html">Active SDK Versions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../preview/index.html">Preview Environment</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text"><a href="https://docs.ted.europa.eu/eforms-sdk-explorer" target="_blank" rel="noopener">SDK Explorer</a></span>
   </li>
   <li class="nav-item" data-depth="1">
     <span class="nav-text"><span class="separated"><strong>General Reference</strong> <code>{eforms_latest_version}</code></span></span>
@@ -233,14 +251,6 @@
       </ul>
     </li>
     <li class="component">
-      <a class="title" href="../../m2o-home/index.html">model2owl</a>
-      <ul class="versions">
-        <li class="version is-latest">
-          <a href="../../m2o-home/index.html">default</a>
-        </li>
-      </ul>
-    </li>
-    <li class="component">
       <a class="title" href="../../training/latest/index.html">Training Docs</a>
       <ul class="versions">
         <li class="version is-latest">
@@ -263,15 +273,15 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../index.html">eForms SDK</a></li>
-    <li><a href="index.html">Frequently Asked Questions</a></li>
+    <li><a href="index.html">eForms FAQ</a></li>
   </ul>
 </nav>
 </div>
   <div class="content">
-<aside class="toc sidebar" data-title="Contents" data-levels="2">
+    <aside class="toc sidebar" data-title="Contents" data-levels="2">
   <div class="toc-menu"></div>
 </aside>
-<article class="doc">
+    <article class="doc">
 <h1 class="page">eForms FAQ</h1>
 <div class="sect1">
 <h2 id="_general_overview_of_eforms"><a class="anchor" href="#_general_overview_of_eforms"></a>General overview of eForms</h2>
@@ -282,28 +292,27 @@
 <p><em>Is there a general presentation of eForms available?</em></p>
 <p>The policy background of eForms is available on the <a href="https://ec.europa.eu/growth/single-market/public-procurement/digital/eforms_en">DG GROW website</a>.</p>
 <div class="paragraph">
-<p>All previous editions of eForms Technical Workshops/ events can be found <a href="https://op.europa.eu/en/web/ted-eforms/previous-editions">online</a>. As the successor to previous eForms technical workshops, the Publications Office is organising a series of <a href="https://op.europa.eu/en/web/ted-eforms/home">workshops</a> in 2024 to exchange information with eSenders and their developers.</p>
+<p>The Publications Office (OP) organises regular eForms workshops; all past editions of TED eSender events can be found <a href="https://op.europa.eu/en/web/ted-eforms/previous-editions">online</a>.</p>
+</div>
+<div class="paragraph">
+<p>Following the <a href="https://op.europa.eu/en/web/ted-eforms/home">2024 series</a>, OP is now preparing the TED eSender workshops schedule for 2025.</p>
 </div>
 </li>
 <li>
 <p><em>What systems are available to eSenders?</em></p>
-<p>OP has developed and made available since 14 November 2022 a range of applications (TED Apps for eForms) to manage the collection, validation, processing,
+<p>OP has developed and made available since 14 November 2022 a range of applications (TED Apps) to manage the collection, validation, processing,
 visualisation and dissemination of eForms notices.  The relevant applications are also available through a
-<a href="https://docs.ted.europa.eu/home/eforms/preview/">“Preview”</a> environment to help eSenders develop and test their own applications.
-A guide on how to test in "Preview" was presented in <a href="https://op.europa.eu/en/web/eforms-2022/agenda">Day 1 of the second eForms Technical Workshop</a>:
-<a href="https://op.europa.eu/documents/10630606/0/TED-Developer-Portal-eForms-APIs-Sep29-eForms-Technical-Workshop.pptx/d0237e8e-500d-4b11-526c-e66c23ec773c?t=1664438251508">"TED Developer Portal and using eForms APIs"</a>.</p>
+<a href="https://docs.ted.europa.eu/home/eforms/preview/">“Preview”</a> environment to help eSenders develop and test their own applications.</p>
 </li>
 <li>
-<p><em>Until when will the eNotices and eSentool applications be available?</em></p>
+<p><em>Until when were the eNotices and eSentool applications available?</em></p>
 <p>The submission of notices via eSentool and eNotices was closed on 31 January 2024.
-It will be possible to continue to view your published notices in eNotices until 30 June 2024
-and your submitted notices in eSentool until 30 April 2024.</p>
+eNotices and eSentool remained available for users to view their published notices until 30 June and 30 April 2024 respectively.</p>
 <div class="paragraph">
-<p>The new eNotices2 application is an application that performs both functions carried out by the current eNotices and eSentool applications;
-it has been available since 14 November 2022 and ran in parallel with eNotices and eSentool applications during the transition period.</p>
+<p>The eNotices2 application and TED API (successor to eSentool) have been available since 14 November 2022, running in parallel with the legacy applications during the transition period.</p>
 </div>
 <div class="paragraph">
-<p>Authorised applications can send complete notices to the API data interface of eNotices2,
+<p>Authorised applications can send complete notices to the API data interface of eNotices2 (Publication API),
 and if they are valid, they will be published in the Supplement to the Official Journal
 of the European Union (OJ S). Individuals with an eNotices2 account can
 create notices within eNotices2 using its interactive web forms.</p>
@@ -317,7 +326,7 @@ by an individual Member State.</p>
 </div>
 </li>
 <li>
-<p><em>With eSentool, several people could access the same front-end eSender account. Are eSenders able to organise themselves the same way in eNotices2?</em></p>
+<p><em>Can multiple users share access to the same eSender account in eNotices2?</em></p>
 <p>eNotices2 web user interface was designed with front-end users of eNotices2 in mind.
 eSenders are API users and other than logging in eNotices2 once to pair their API key,
 we would discourage them from using eNotices2 web user interface to avoid certain manual actions that may interfere with using the API.</p>
@@ -328,16 +337,9 @@ We would, therefore, discourage any manual operations on notices via the user in
 these sort of groupings and permissions should be handled in the eSender’s application instead.</p>
 </div>
 <div class="paragraph">
-<p>For generating an API key via the TED Developer Portal, only one EU Login (and its email address) is allowed per account.
-As an eSender, you should use a functional/ shared email address to generate your API key and your eNotices2 account.</p>
-</div>
-<div class="paragraph">
-<p>The TED Developer Portal offers the possibility to eSenders to add additional contact emails to their “Developer Profile”
-so that they can receive communication from the Publications Office, such as important announcements, events and downtime notifications.</p>
-</div>
-<div class="paragraph">
-<p>Any automated notifications coming from eNotices2 application that OP may develop in the future for eSenders will still be addressed
-to the one email address/ EU Login of the eNotices2 account. As of application version 1.14.0 of eNotices2, the eSender’s email address is also included in copy of the automated notifications regarding the various statuses of notices.</p>
+<p>eSenders should create instead a “profile” in the TED Developer Portal using a functional email address in order to generate an API key.
+The Publications Office will send communication such as important announcements, events, and downtime notifications
+to the main email address of the eSender as well as any additional contact emails the eSender has specified in their “Developer Profile”.</p>
 </div>
 </li>
 <li>
@@ -410,6 +412,18 @@ General for Internal Market, Industry, Entrepreneurship, and SME)<br>
 <a href="https://op.europa.eu/en/web/ted-eforms/agenda-q1-20-march-2024" class="bare">https://op.europa.eu/en/web/ted-eforms/agenda-q1-20-march-2024</a></p>
 </li>
 <li>
+<p>eForms presentations from the TED eSender Workshop in June 2024<br>
+<a href="https://op.europa.eu/en/web/ted-eforms/agenda-q2-20-june-2024" class="bare">https://op.europa.eu/en/web/ted-eforms/agenda-q2-20-june-2024</a></p>
+</li>
+<li>
+<p>eForms presentations from the TED eSender Workshop in September 2024<br>
+<a href="https://op.europa.eu/en/web/ted-eforms/agenda-q3-26-september-2024" class="bare">https://op.europa.eu/en/web/ted-eforms/agenda-q3-26-september-2024</a></p>
+</li>
+<li>
+<p>eForms presentations from the TED-together event in December 2024<br>
+<a href="https://op.europa.eu/en/web/ted-together/agenda_2024_12_03" class="bare">https://op.europa.eu/en/web/ted-together/agenda_2024_12_03</a></p>
+</li>
+<li>
 <p>TED developer documentation portal<br>
 <a href="https://docs.ted.europa.eu/" class="bare">https://docs.ted.europa.eu/</a></p>
 </li>
@@ -422,7 +436,7 @@ General for Internal Market, Industry, Entrepreneurship, and SME)<br>
 </div>
 </div>
 <div class="paragraph">
-<p>For any questions or issues, please contact the TED helpdesk at: ted@publications.europa</p>
+<p>For any questions or issues, please contact the TED helpdesk at: <a href="mailto:ted@publications.europa.eu">ted@publications.europa.eu</a></p>
 </div>
 <div class="paragraph">
 <p>For developers, please see our <a href="https://docs.ted.europa.eu/eforms/latest/guide/index.html">eForms Developer Guide</a>.</p>
@@ -465,11 +479,11 @@ which were both shared on SIMAP: <a href="https://simap.ted.europa.eu/web/simap/
 <a href="https://op.europa.eu/documents/11465927/11661400/2023-01-02-Lifecycle+of+eForms+notices-3rd+eForms+Technical+Workshop.pptx/a83fc6b8-191e-3e20-a412-7b94ba5317cc?t=1675250338281">lifecycle of eForms notices</a> was presented during the 3rd eForms Technical Workshop.</p>
 </li>
 <li>
-<p><em>What is planned with eForms regarding the OJ S publication number?</em></p>
-<p>Starting on 14 November 2023, any notices submitted as eForms will have a publication number of 8 digits,
-meaning that any application handling eForms must use this format. As of SDK 1.7, eForms notices have up to 8 digits (leading zeros allowed).
-On TED, eForms notices will therefore have a publication number of up to 8 digits
-and the legacy TED-XML notices will continue to have a 6-digit publication number.</p>
+<p><em>What changed with eForms regarding the OJ S publication number?</em></p>
+<p>Starting on 14 November 2023, notices submitted as eForms now have a publication number of up to 8 digits,
+allowing leading zeros. Applications handling eForms must accommodate this format.
+Since SDK 1.7, eForms notices have adopted this 8-digit format, while legacy TED XML notices continue to use 6-digit publication numbers.
+On TED, eForms notices are displayed with publication numbers of up to 8 digits, ensuring compatibility with the new standard.</p>
 </li>
 <li>
 <p><em>In order to continue a procedure that was started in the legacy TED XML, how should the previous publication field be filled in given that the Procedure Identifier was not used?</em></p>
@@ -482,6 +496,8 @@ notice (as published in the OJ S) must be entered in the previous publication fi
 <div class="paragraph">
 <p>OPP-090 should be used exclusively to point to a TED XML notice if it may not be covered by other fields, i.e.:</p>
 </div>
+<div class="openblock">
+<div class="content">
 <div class="ulist">
 <ul>
 <li>
@@ -495,15 +511,19 @@ notice (as published in the OJ S) must be entered in the previous publication fi
 </li>
 <li>
 <p>Framework Notice Identifier (OPT-100).</p>
-<div class="paragraph">
-<p>Any referenced notice must have been already published. Referring to a TED XML notice, the format may only be ‘XXXXXX-YYYY’, i.e. Notice Publication ID.</p>
-</div>
 </li>
 </ul>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Any referenced notice must have been already published. Referring to a TED XML notice, the format may only be ‘XXXXXX-YYYY’, i.e. Notice Publication ID.</p>
 </div>
 <div class="paragraph">
 <p>To link from an eForms Notice to a published TED XML notice:</p>
 </div>
+<div class="openblock">
+<div class="content">
 <div class="ulist">
 <ul>
 <li>
@@ -523,11 +543,13 @@ notice (as published in the OJ S) must be entered in the previous publication fi
 </li>
 </ul>
 </div>
+</div>
+</div>
 </li>
 <li>
 <p><em>In the documentation we can read that we must use a UUID version 4 for the Procedure Identifier. Are there any limitations? Can we use every possible identifier and is it possible that two or more eSenders use the same number identifier in this case?</em></p>
 <p>The Procedure UUID is not linked to the eSender but to the procedure. Same Procedure UUID documents will be linked together in the same family of documents;
-this is the case - for instance -  for a continued procedure. In practice, it would be possible to send same family documents
+this is the case - for instance -  for a continued procedure. In practice, it would be possible to send same-family documents
 (linked together through the same Procedure ID) through different eSenders/ platforms.</p>
 <div class="paragraph">
 <p>There are no limitations at this stage and version 4 UUID was chosen as the chances that the same UUID will be generated is close enough to zero to be negligible.</p>
@@ -575,13 +597,12 @@ and for which none of the above may apply.</p>
 </div>
 </li>
 <li>
-<p><em>How do we make a correction to a notice published in TED XML schema, after transitioning to eForms?</em></p>
+<p><em>How can we correct a notice in the eForms schema if the original notice was published in the TED XML schema?</em></p>
 <p>In the same way that it is possible to link TED XML notices to eForms
 for procedures that started with TED schema and ended with eForms.</p>
 <div class="paragraph">
 <p>The notice in eForms format will link to the preceding TED format notice
-by referencing its OJ S number. However, a TED format notice cannot follow a notice
-in eForms format.</p>
+by referencing its OJ S number.</p>
 </div>
 <div class="paragraph">
 <p>OP has created a converter, so a published notice
@@ -637,7 +658,7 @@ this lot/ these lots will not be relaunched.</p>
 changes, or otherwise modifies a "parent" notice (identified by NoticeID and VersionID) with the use of BG-9 and in particular BT-140 Change Reason Code.</p>
 <div class="paragraph">
 <p>A Change notice must contain all the information reported in the initial notice, with changes applied, as well as a section
-describing the latest changes (to the immediately preceding Notice):</p>
+describing the latest changes (to the immediately preceding/ last published version of the notice):</p>
 </div>
 <div class="paragraph">
 <p>Changes may apply to notices of any form type. A Change notice may only concern a single notice and contains all the information from
@@ -686,18 +707,18 @@ and resubmitted or in case of error.</p>
 then successive Change notices have to be submitted, each referring to the previous one.</p>
 </div>
 <div class="paragraph">
-<p>Changes may only be applied on published notices, therefore, the use case where a second change should be applied
-while the first one has not been published should be addressed either way:</p>
+<p>Changes may only be applied to published notices. Therefore, if a second change is to be applied before the first one is published,
+it must be addressed in one of the following ways:</p>
 </div>
 <div class="openblock">
 <div class="content">
 <div class="ulist">
 <ul>
 <li>
-<p>Complete and submit the first Change notice to have it published and then proceed with the second</p>
+<p>Complete and submit the first Change notice to have it published and then proceed with the second.</p>
 </li>
 <li>
-<p>Integrate all changes in a single valid Change notice</p>
+<p>Integrate all changes in a single valid Change notice.</p>
 </li>
 </ul>
 </div>
@@ -739,12 +760,14 @@ or its latest Change.</p>
 </div>
 <div class="paragraph">
 <p>The Contract Modification section of the notice is repeatable and multiple contracts may be modified with a single
-notice, given they were already all in the same previous notice; this is important for situations where a lot
+notice, provided they were already all in the same previous notice; this is important for situations where a lot
 has multiple winners, as a modification on the lot will affect all the associated contracts.</p>
 </div>
 <div class="paragraph">
 <p>While the Contract Modification section is repeatable, each occurrence should:</p>
 </div>
+<div class="openblock">
+<div class="content">
 <div class="ulist">
 <ul>
 <li>
@@ -765,6 +788,11 @@ has multiple winners, as a modification on the lot will affect all the associate
 </li>
 <li>
 <p>identify the notice on which it is based (BT-1501(n)-Contract).</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 <div class="paragraph">
 <p>All data not pertaining to the modified contract(s) must be removed from the contract modification notice
 i.e. all lots, groups of lots, Tenders, Tendering parties, Contracts, Organizations not related to any modified contract(s).</p>
@@ -778,12 +806,11 @@ whose names start with “can-modif…”.</p>
 and no concurrent Contract Modification Notices may be submitted.</p>
 </div>
 </li>
-</ul>
-</div>
-</li>
 <li>
 <p><em>What is the notice status of an eForms notice through its lifecycle?</em></p>
 <p>A user working on the user interface of eNotices2 will be able to see the following notice status:</p>
+<div class="openblock">
+<div class="content">
 <div class="ulist">
 <ul>
 <li>
@@ -812,6 +839,8 @@ and no concurrent Contract Modification Notices may be submitted.</p>
 </li>
 </ul>
 </div>
+</div>
+</div>
 <div class="paragraph">
 <p>The following notice statuses can be queried via the API for eSenders:
 DRAFT, SUBMITTED, STOPPED, PUBLISHED, DELETED, NOT_PUBLISHED, ARCHIVED, VALIDATION_FAILED, PUBLISHING.
@@ -821,17 +850,18 @@ For more information, see the relevant section: <a href="https://docs.ted.europa
 <li>
 <p><em>What is the meaning of notice status “Not published”? Will there be reason codes for “Not Published” notices?</em></p>
 <p>If a notice is rejected due to manual lawfulness checks, or a technical error occurs in TED Monitor 2022,
-the notice will obtain status “Not published”, which can be queried through the API. Rejection due to lawfulness manual check
-will be communicated via email to the contracting authority only.</p>
+the notice will obtain status “Not published”, which can be queried through the API.</p>
 </li>
 <li>
 <p><em>What is the meaning of notice status “Publishing”?</em></p>
-<p>Every working day, (generally around 16:00 CET depending on the number of notices to be published), the Publications Office
-initiates the process of publication of the next OJ S. If a notice is in the daily export to TED and the process has been initiated,
-the status of a “submitted” notice will then change to "publishing". “Stop publication” action is no longer possible
-for notices in status “publishing”. Once the notice has been published, you will be able to submit a change notice for publication in the OJ S
-cancelling the initial notice, i.e. by creating a change notice with reason “notice cancelled”. Both the original notice
-and the change notice will be published in the OJ S in this case.</p>
+<p>Every working day, according to the OJS <a href="https://ted.europa.eu/en/release-calendar">release calendar</a>,
+the Publications Office initiates the process of publication of the next OJ S. The back-end application (TED Monitor)
+selects all “submitted” notices that have the expected publication date of the OJ S issue and includes them in the daily export.</p>
+<div class="paragraph">
+<p>The export can happen at any time between midday and midnight, depending on the circumstances but it currently happens around 15:00 CET.
+Once a notice has been exported, its status will change to “publishing” and it is no longer possible to stop its publication.
+The status will change to “published” after the notice has been published on TED, not later than 9:00 on the publication date of the OJ S issue.</p>
+</div>
 </li>
 <li>
 <p><em>What is meant by E1, E2, E3, E4 and E5 in the Excel document annexed to the eForms regulation?</em></p>
@@ -839,10 +869,10 @@ and the change notice will be published in the OJ S in this case.</p>
 the eForms regulation, but they were included in the “Extended Annex” to
 regulation 2019/1780 available at: <a href="https://ec.europa.eu/docsroom/documents/43488" class="bare">https://ec.europa.eu/docsroom/documents/43488</a></p>
 <div class="paragraph">
-<p>These optional forms will be implemented in 2024, as defined in the second amendment to the eForms implementing regulation.</p>
+<p>These optional forms were implemented in 2024, as defined in the second amendment to the eForms implementing regulation. The new voluntary forms were included in SDK release 1.13.</p>
 </div>
 <div class="paragraph">
-<p>They would extend (E) the set of the other forms and correspond to the
+<p>They extend (E) the set of the other forms and correspond to the
 following notices:</p>
 </div>
 <div class="ulist">
@@ -916,21 +946,20 @@ region, neither BT-507 nor BT-5071 is required.</p>
 </div>
 </li>
 <li>
-<p><em>How will tailoring by Member States be handled by TED and the Publications Office?</em></p>
+<p><em>How is tailoring by Member States handled by TED and the Publications Office?</em></p>
 <p>National specificities and their implementation at national, regional
 and local level are outside OP&#8217;s remit.</p>
 <div class="paragraph">
-<p>In the eNotices2 form-filling tool user interface, users will be able to fill in and
+<p>In the eNotices2 form-filling tool user interface, users can fill in and
 send notices based on the eForms regulation. eNotices2 is not aware of
 and does not apply any compliance with Member State tailoring; for
 example, it will not check if an optional field (according to the EU
 regulation) is mandatory at national level.</p>
 </div>
 <div class="paragraph">
-<p>The same applies to notices sent by eSenders via the eNotices API
-(the successor of eSentool). All notices go through the same checks of
-the Central Validation Service, not applying any Member State
-tailoring. It is up to each user (or eSender) to ensure that their
+<p>The same applies to notices sent by eSenders via the TED API, which undergo the same validation checks,
+without considering any Member State-specific tailoring.
+It is up to each user (or eSender) to ensure that their
 notices comply with the national implementation of eForms. <br></p>
 </div>
 </li>
@@ -956,20 +985,9 @@ notices comply with the national implementation of eForms. <br></p>
 </li>
 <li>
 <p><em>What is the function of eNotices2?</em></p>
-<p>The development of eNotices2 started in 2020 and the application went in production in November 2022.
-eNotices2 is also available in <a href="https://docs.ted.europa.eu/home/eforms/preview/index.html#_enotices2">"Preview"</a> for testing purposes.</p>
-<div class="paragraph">
-<p>The scope of the application is to implement the eForms requirements in
-a product that will allow at least the same functionalities that are
-available in the current eNotices and the main functionalities that
-are currently available in eSentool.</p>
-</div>
-<div class="paragraph">
-<p>The application also has a number of new features that will make
-it easier and more streamlined for contracting parties to publish
-notices, while mitigating the inherent complexity of the eForms
-regulation as much as possible.</p>
-</div>
+<p>The development of eNotices2 started in 2020 and the application went in production in November 2022
+with the aim to implement the eForms requirements while mitigating the inherent complexity of the eForms
+regulation as much as possible. eNotices2 is also available in <a href="https://docs.ted.europa.eu/home/eforms/preview/index.html#_enotices2">"Preview"</a> for testing purposes.</p>
 <div class="paragraph">
 <p>Presentations are available at the <a href="https://op.europa.eu/en/web/ted-esenders-webinar-2021">2021 eSenders seminar</a>. A demo of eNotices2
 front-end application was presented during the
@@ -1000,7 +1018,7 @@ front-end application was presented during the
 </li>
 <li>
 <p><em>Does eNotices2 propose all the fields (mandatory and optional)?</em></p>
-<p>This is the point of eNotices2: it provides all mandatory and optional fields
+<p>eNotices2 provides all mandatory and optional fields
 and it has rules to determine which fields are mandatory under certain conditions.
 There is also be a feature for users to make some of the optional fields mandatory. In the same way,
 it is also possible that if an optional field is not relevant for some users, the administrator of
@@ -1008,16 +1026,24 @@ the organisation can “hide” these optional fields from view should they wish
 </li>
 <li>
 <p><em>Will you continue to send email notifications, e.g. to the Contracting Authorities, to remind them to publish a contract award notice?</em></p>
-<p>We have foreseen quite an extensive notification system, which will contain several methods for communication with eNotices2 users,
-including email communications. We should also provide the means to retrieve the information about the contracting authority
-sending notice through an eSender via the Notice Author concept, when it is needed. We have not yet decided if the reminder
-to publish a Contract Award Notice will be sent through an email notification, though it will likely be the case at some point.</p>
+<p>We have foreseen quite an extensive notification system, which contains several methods for communication with eNotices2 users,
+including email communications. We also provide the means to retrieve the information about the contracting authority
+sending notices through an eSender via the Notice Author concept. We have not yet decided if the reminder
+to publish a Contract Award Notice will be sent through an email notification.</p>
 </li>
 <li>
-<p><em>Will eNotices2 send email notifications for notices submitted by Web Services about publication or non-publication?</em></p>
-<p>eSenders need to rely primarily on their API queries for the status of their notices.</p>
+<p><em>Does eNotices2 send email notifications for notices submitted by Web Services about publication or non-publication?</em></p>
+<p>eSenders should primarily rely on their API queries to track the status of their notices.</p>
 <div class="paragraph">
-<p>The automated notifications of eNotices2 regarding the various notice statuses are primarily addressed to the Notice Author email address that the eSender needs to provide in the metadata. These emails have been improved as of application version 1.14.0 to also include the eSender’s email address in copy. As part of the improvement, the Publication notification email includes a link to the published notice on TED.</p>
+<p>Additionally, automated notifications from eNotices2 regarding notice statuses are sent to the Notice Author email address
+provided by the eSender in the metadata (mandatory property: noticeAuthorEmail).</p>
+</div>
+<div class="paragraph">
+<p>These notifications were enhanced in application version 1.14.0 to also include the eSender’s main email address as a CC.
+As part of this improvement, publication notification emails now include a direct link to the published notice on TED.
+The language set by the eSender in the metadata (mandatory property: noticeAuthorLocale)
+determines in which of the 24 EU official languages the Contracting Authority is notified by the Publications Office
+about the status of their notices.</p>
 </div>
 </li>
 </ol>
@@ -1045,7 +1071,7 @@ but it is quite close to what the eForms TED Viewer will produce.</p>
 </div>
 <div class="paragraph">
 <p>The <a href="https://github.com/OP-TED/eForms-SDK/tree/develop/view-templates">view-templates</a> available in the SDK
-contain the technical definition of how an HTML/ PDF will be generated by TED Viewer 2022.</p>
+contain the technical definition of how an HTML/ PDF is generated by TED Viewer 2022.</p>
 </div>
 <div class="paragraph">
 <p>The <a href="https://github.com/OP-TED/eforms-notice-viewer">eForms notice viewer</a> is available on GitHub as a sample application
@@ -1060,7 +1086,7 @@ All recordings and presentations from <a href="https://op.europa.eu/en/web/ted-r
 </li>
 <li>
 <p><em>What preview solution do you provide with eForms TED API?</em></p>
-<p>TED Viewer 2022 is available through an API in order to visualise the notice in HTML and PDF.
+<p>TED Viewer 2022 is available through an API (Visualisation API) in order to visualise the notice in HTML and PDF.
 It is possible to preview a notice before sending it for publication.</p>
 </li>
 <li>
@@ -1074,7 +1100,7 @@ notices) on the TED website is 10 years (data available as of
 <p>OP does not intend to provide XSL stylesheets. The view-templates in the SDK define how eForms will be displayed by TED Viewer 2022,
 using the eForms expression language (EFX).</p>
 <div class="paragraph">
-<p>Users will also be able to render eForms notices in HTML or PDF using the service provided by TED Viewer 2022, which is available through an API.</p>
+<p>Users are able to render eForms notices in HTML or PDF using the service provided by TED Viewer 2022, which is available through an API.</p>
 </div>
 </li>
 <li>
@@ -1087,7 +1113,7 @@ at https://github.com/OP-TED/eForms-SDK/tree/main/examples/notices.</p>
 </li>
 <li>
 <p><em>What is the meaning of section 10.CHANGE in eForms 40 - Contract Modification Notice?</em></p>
-<p>eForm 40 is the equivalent of current TED schema form 20; it is used to publicise changes in ongoing contracts.
+<p>eForm 40 is used to publicise changes in ongoing contracts.
 As with all other forms, it may be corrected, in which case, a form 40 will contain section 10 (change) and
 will be published as a Change notice for a <a href="https://docs.ted.europa.eu/eforms/latest/schema/contract-modification-notice.html">Contract Modification Notice</a>.</p>
 </li>
@@ -1138,9 +1164,7 @@ are built to integrate the SDK components.</p>
 <p>More information about the SDK was presented at the <a href="https://op.europa.eu/en/web/ted-esenders-webinar-2021">2021 eSenders seminar</a>.</p>
 </div>
 <div class="paragraph">
-<p>The <a href="https://op.europa.eu/en/web/ted-esenders-workshop-2022/agenda">May 2022 eForms Technical Workshop</a> focused on building metadata-driven
-applications using the SDK, followed by the <a href="https://op.europa.eu/en/web/eforms-2022/agenda">second eForms Technical Workshop of September 2022</a> and
-the <a href="https://op.europa.eu/en/web/ted-esenders-webinar-2022/home">TED eSenders annual seminar of 2022</a>.</p>
+<p>The <a href="https://op.europa.eu/en/web/ted-esenders-workshop-2022/agenda">May 2022 eForms Technical Workshop</a> focused on building metadata-driven applications using the SDK.</p>
 </div>
 <div class="paragraph">
 <p>For more information and examples of metadata driven applications: <a href="https://docs.ted.europa.eu/eforms/latest/metadata-driven-applications.html" class="bare">https://docs.ted.europa.eu/eforms/latest/metadata-driven-applications.html</a></p>
@@ -1157,7 +1181,7 @@ the <a href="https://op.europa.eu/en/web/ted-esenders-webinar-2022/home">TED eSe
 <p><em>Since the codelists are bound to SDK versions, is there a risk that an SDK version/ lifetime can be short-lived?</em></p>
 <p>Versions of the SDK might be short-lived due to various reasons; however, multiple versions of the SDK can be used at the same time
 provided they are still acceptable. OP will aim to avoid breaking changes but stopping support for an SDK
-will often come for legal reasons and will be given a six-month transition time. Technically, there would be no reason
+will often come for legal reasons. Technically, there would be no reason
 to deprecate a version of the SDK. Significant business changes, such as making mandatory some fields that were previously optional,
 might force us to deprecate an active version of the SDK after a pre-announced transition period.</p>
 <div class="paragraph">
@@ -1187,33 +1211,6 @@ They most often map to single XML elements, but not always. The mapping of Field
 <p><em>If we were to use the SDK, would there be the need to customise for the national adoptions?</em></p>
 <p>Yes, customisations and tailoring would need to be applied locally, on the user’s application.</p>
 </li>
-<li>
-<p><em>Will OP be providing a mapping of current TED XML schema to eForms?</em></p>
-<p>To support the transition between the two data formats, OP is mapping the fields of the current TED XML schema to the eForms schema.</p>
-<div class="paragraph">
-<p>This <a href="https://simap.ted.europa.eu/documents/10184/320101/TED-XML-to-eForms-mapping-OP-public-20220404/a0fed751-76cb-491b-957d-96985fdc82a4">mapping in Excel</a>
-builds on the 2021 mapping of business terms by the European Commission and completes it with the technical mapping of TED XML
-to the fields of the eForms schema at XPath level.</p>
-</div>
-<div class="paragraph">
-<p>Not all standard forms (SF) are included, and there is not an exact business correspondence between each SF and each eForm notice.</p>
-</div>
-<div class="paragraph">
-<p>This Excel file is provided "as is" and may serve as a guide. It will not be further updated but any feedback is welcome via <a href="mailto:ted@publications.europa.eu">ted@publications.europa.eu</a></p>
-</div>
-<div class="paragraph">
-<p>OP is sharing the XSLT files with the actual implementation of these mappings, which will be progressively enriched:
-<a href="https://github.com/OP-TED/ted-xml-data-converter" class="bare">https://github.com/OP-TED/ted-xml-data-converter</a>.</p>
-</div>
-<div class="paragraph">
-<p>OP has also developed an application to convert from TED XML to eForms XML using these XSLT files and which is provided as a public API service.</p>
-</div>
-<div class="paragraph">
-<p>The conversion of TED XML will always result in an invalid eForms XML because, for example, not all fields exist, or text fields
-cannot be turned into codelist values. But it should allow users and systems to carry over as much as possible of existing notices into the new format,
-for example, when continuing a procedure that overlaps the switch between the two schemas.</p>
-</div>
-</li>
 </ol>
 </div>
 <div class="admonitionblock note">
@@ -1240,7 +1237,7 @@ You can use the "watch" repository feature of Github to receive notifications fo
 <ol>
 <li>
 <p><em>Is there a TED qualification environment available for eForms? How can we test the submission of eForms notices?</em></p>
-<p>There is no qualification procedure for eForms and any user with an API key and an eNotices2 account is able to submit notices via the API.
+<p>There is no qualification procedure for eForms and any user with an API key and an eNotices2 account is able to submit notices via the TED API.
 eSenders, however, are required to be familiar with the <a href="https://enotices2.ted.europa.eu/cookies-legal-notice">“Terms of service”</a>.</p>
 <div class="paragraph">
 <p>The environments available are Production and Preview.</p>
@@ -1253,30 +1250,25 @@ Users can check the version range of the currently available SDK at any given ti
 </div>
 <div class="paragraph">
 <p>The Central Validation Service (CVS) is remotely available so that you can check the validity of eForms
-notices. As our developments have no awareness of national tailoring, the application of the eForms regulation in national legislation
+notices before submitting them for publication.
+As our developments have no awareness of national tailoring, the application of the eForms regulation in national legislation
 will not be taken into account for the CVS.</p>
 </div>
 <div class="paragraph">
-<p>SDK active versions and their planned removal/ end of support can be found at: <a href="https://docs.ted.europa.eu/home/eforms/active-versions/index.html" class="bare">https://docs.ted.europa.eu/home/eforms/active-versions/index.html</a></p>
+<p>SDK active versions and their planned removal/ end of support can be found on our
+<a href="https://docs.ted.europa.eu/home/eforms/active-versions/index.html">Active SDK versions</a> page.</p>
 </div>
 </li>
 <li>
-<p><em>Will there be any limitations for using the Central Validation Service?</em></p>
-<p>The Central Validation Service (CVS) is available to users the same way as for eNotices2.
-There should be no limitations in using the CVS through the TED API. However, there will be some throttling
-to prevent that possible abuse of the system would degrade the experience for users. Therefore, there will be some limits
-to make sure the system works well for everyone, but the exact limitations will be communicated at a later stage.</p>
-</li>
-<li>
 <p><em>What is the authentication method used for eForms and TED API?</em></p>
-<p>TED Apps for eForms use an API Key that verifies the user’s identity and through it, the user will be able to connect to various services,
+<p>TED Apps use an API Key that verifies the user’s identity and through it, the user will be able to connect to various services,
 i.e. to submit/ validate/ visualise/ search (for one&#8217;s own) notices. Any user can be a Web Services user as long as they have a valid API key.</p>
 </li>
 <li>
 <p><em>Where can I get an API key?</em></p>
 <p>API keys can be generated from the TED Developer Portal. Only one API key is allowed/ active at a time per EU Login.</p>
 <div class="paragraph">
-<p>API keys are only valid for the environment they were created in. For instance, to send notices to Production via the eNotices2 API,
+<p>API keys are only valid for the environment they were created in. For instance, to send notices to Production via the Publication API,
 you would need to generate your key in the <a href="https://developer.ted.europa.eu/home">Developer Portal in Production</a>.</p>
 </div>
 <div class="paragraph">
@@ -1284,8 +1276,8 @@ you would need to generate your key in the <a href="https://developer.ted.europa
 it needs to be generated in the <a href="https://developer.preview.ted.europa.eu/home">Developer Portal in Preview</a>.</p>
 </div>
 <div class="paragraph">
-<p>To use TED API of eNotices2 (either in Preview or in Production), an eSender should log in at least once in the corresponding environment
-of the User Interface to pair their API key with their eNotices2 account. To avoid authentication issues after generating a key, eSenders should perform at least one valid API request to eNotices2 with their key.</p>
+<p>To use the Publication API (either in Preview or in Production), an eSender should log in at least once in the corresponding environment
+of the eNotices2 User Interface to pair their API key with their eNotices2 account. To avoid authentication issues after generating a key, eSenders should perform at least one valid API request to eNotices2 with their key.</p>
 </div>
 <div class="paragraph">
 <p>A guide on how to test in "Preview" was presented in
@@ -1306,6 +1298,42 @@ eSenders need to log in once to pair their key and perform at least one valid AP
 </div>
 </li>
 <li>
+<p><em>Are there any limitations in place for the TED API?</em></p>
+<p>OP will discuss and decide at a later stage whether there should be limits imposed on the number of lots and organisations for submitted notices. Regarding limits in general, the timeout is the first limit to be reached and there is no specific limit for the file size.</p>
+<div class="paragraph">
+<p>We currently have a timeout of 3 minutes for any request to our APIs. This applies for requests made directly to CVS, and requests to the publication/submission API.</p>
+</div>
+<div class="paragraph">
+<p>The time spent validating and submitting a notice does depend on the number of lots and the number of organisations, but those are not the only factors. Other factors are:</p>
+</div>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>The type of notice: a result notice has more information to validate than a competition notice with the same number of lots and organisations.</p>
+</li>
+<li>
+<p>The number of other types of entities: buyers, tenders, tendering parties, contracts, etc.</p>
+</li>
+<li>
+<p>The number of references to entities: we check that the identifier in each reference corresponds to an entity in the notice.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>We are constantly working on reducing the time required to process notices, which then allows us to process bigger notices before the timeout. This includes improvements in our applications, and changes in the content of the eForms SDK.</p>
+</div>
+<div class="paragraph">
+<p>Validation of large notices can be several times faster in later SDK versions, with particular improvements with versions 1.10 and 1.13. If you intend to submit very big notices, we recommend upgrading to a later SDK version.</p>
+</div>
+<div class="paragraph">
+<p>For large Result notices, we recommend breaking them up into smaller notices; this will reduce the possibility of a timeout and also make the notice more legible for readers and end users.</p>
+</div>
+</li>
+<li>
 <p><em>What is the purpose of the Developer Profile?</em></p>
 <p>The Developer Profile was first presented to eSenders and their developers in the
 <a href="https://op.europa.eu/en/web/eforms-2022/agenda">2nd eForms Technical Workshop</a> of September 2022 (TED Developer Portal and using eForms APIs).</p>
@@ -1323,9 +1351,15 @@ We recommend that you only have one eSender account in Production, while your de
 can have the accounts they need in the Preview environment.</p>
 </div>
 <div class="paragraph">
-<p>Making the profile public is entirely optional. The information eSenders provide in “Public profile” will be used (with their consent)
+<p>Human-generated emails, such as announcements about downtimes, events, and specific messages from the Publications Office and OJS eSenders team,
+will be sent to both the main email address of each eSender and any 'additional emails' they have specified in the TED Developer Portal&#8217;s Preview and Production environments.
+To ensure receipt of these communications from the OP, eSenders must update their developer profiles with all additional email addresses.
+Please note that the Publications Office does not manually add email addresses to their distribution list.</p>
+</div>
+<div class="paragraph">
+<p>Making the developer profile public is entirely optional. The information eSenders provide in “Public profile” will be used (with their consent)
 to automatically generate a list of eSenders using eForms, which is the next step in the development. These lists will eventually replace the page
-<a href="https://simap.ted.europa.eu/web/simap/list-of-ted-esenders">SIMAP-List of TED eSenders</a>, which will not be maintained with eForms.</p>
+<a href="https://ted.europa.eu/en/simap/list-of-ted-esenders">SIMAP-List of TED eSenders</a>, which will not be maintained with eForms.</p>
 </div>
 <div class="paragraph">
 <p>The latest developments and next steps of the TED Developer Portal were presented in the
@@ -1337,7 +1371,7 @@ to automatically generate a list of eSenders using eForms, which is the next ste
 <p>Please read the <a href="https://docs.ted.europa.eu/api/index.html">TED Developer docs</a>.</p>
 </li>
 <li>
-<p><em>Will there be some API available, which users can use to transform/ convert TED XML to eForms?</em></p>
+<p><em>Is there some API available, which users can use to transform/ convert TED XML to eForms?</em></p>
 <p>OP has developed a converter which takes a TED XML and converts it to a partial eForms XML. “Partial” because eForms notices
 contain more information than TED XML notices, often in a different format. For notice types that the converter does not cover,
 the information from the previous TED schema form will need to be entered again in the eForm for procedures that span the transition period.
@@ -1350,16 +1384,16 @@ The converter is available as an API in <a href="https://enotices2.ted.europa.eu
 </li>
 <li>
 <p><em>Can I send an incomplete notice via Web Service-API and continue via eNotices2 UI?</em></p>
-<p>No, the notices must be complete before they are submitted via API.</p>
+<p>No, the notices must be complete before they are submitted via API and eSenders are discouraged from using the eNotices2 UI.</p>
 </li>
 <li>
-<p><em>What are the notice statuses that eSenders will be able to query via the API?</em></p>
-<p>eSenders will be able to query their notices with the below statuses:</p>
+<p><em>What are the notice statuses that eSenders can query via the API?</em></p>
+<p>eSenders can query their notices with the below statuses:</p>
 <div class="paragraph">
 <p>DRAFT, SUBMITTED, STOPPED, PUBLISHED, DELETED, NOT_PUBLISHED, ARCHIVED, VALIDATION_FAILED, PUBLISHING.</p>
 </div>
 <div class="paragraph">
-<p>Notice status VALIDATION_FAILED is only relevant to eSenders (users of eNotices2 API) and refers to notices that failed validation
+<p>Notice status VALIDATION_FAILED is only relevant to eSenders (users of TED API) and refers to notices that failed validation
 – i.e. that triggered CVS errors – upon submission. Such notices will never reach status “submitted” and will instead appear
 in the user interface and when querying the API with status “validation failed”.</p>
 </div>
@@ -1377,13 +1411,18 @@ or exported directly from the User Interface of eNotices2. The same notice busin
 </div>
 </li>
 <li>
-<p><em>When can I stop publication of a notice via the API?</em></p>
+<p><em>When can I stop the publication of a notice?</em></p>
 <p>Only when the notice is in status “SUBMITTED”. Once the status of the notice has changed to "PUBLISHING" or "PUBLISHED",
 it is no longer allowed to perform this action. When a submitted notice has entered the daily export to TED
-and OP has initiated the process of publication of the next OJ S (which happens around 16:00 CET on workdays),
-its status will change to “PUBLISHING” and subsequently to “PUBLISHED” (once published in TED). In this case it will only be possible
-to submit a change notice for publication in the OJ S cancelling the initial notice, i.e. by creating a change notice with ReasonCode “cancel”
-from change-corrig-justification.gc. Both the original notice and its change notice will be published in the OJ S.</p>
+and the OP has initiated the process of publication of the next OJ S, its status will change to “PUBLISHING”
+and subsequently to “PUBLISHED” (once published in TED).</p>
+<div class="paragraph">
+<p>During the few minutes that it takes to carry out the export process, it is also not possible to stop the publication of a notice in
+“SUBMITTED” status. After the notice has been exported or published, and if the notice really should be considered null and void,
+it will only be possible to submit a change notice for publication in the OJ S cancelling the initial notice,
+i.e., by creating a change notice with ReasonCode “cancel” from change-corrig-justification.gc.
+Both the original notice and its change notice will be published in the OJ S.</p>
+</div>
 </li>
 <li>
 <p><em>Are there any differences in the notice workflow and statuses between Production and Preview environments?</em></p>
@@ -1393,7 +1432,7 @@ at around 15.00 and 16:00 respectively when these enter the export. Status “no
 provided that the submitted notice triggers a lawfulness warning. For more details, please see the Preview environment page.</p>
 </li>
 <li>
-<p><em>When using TED API of eNotices2, it is required to specify in the metadata "noticeAuthorEmail" and "noticeAuthorLocale". What should an eSender input in the parameters?</em></p>
+<p><em>When using the Publication API, it is required to specify in the metadata "noticeAuthorEmail" and "noticeAuthorLocale". What should an eSender input in the parameters?</em></p>
 <p>Notice author email (mandatory property “noticeAuthorEmail” in the metadata) must be a valid email address.
 The email is used to identify the person responsible for the notice, i.e. the Contracting Authority.</p>
 <div class="paragraph">
@@ -1407,13 +1446,25 @@ one of the following: bg, cs, da, de, el, en, es, et, fi, fr, ga, hr, hu, it, lt
 </div>
 </li>
 <li>
-<p><em>What are search parameters "submittedAt", "updadedAt" and “expectedPublicationDate” and what dates do they represent?</em></p>
-<p>"submittedAt" reflects the value that an eSender inputs in Notice Dispatch Date (BT-05). It is up to the eSender to input a value; as long as the notice passes CVS validation and lawfulness, it will be published.</p>
-<div class="paragraph">
-<p>"updadedAt" reflects the date the most recent update was done on the notice. For instance, if you stop publication on a submitted notice, the "updatedAt" date will also be updated to reflect that. In the future, OP is planning to introduce search parameters for the date/ time of Notice Dispatch Date eSender (BT-803) in the XML (if any), as well as a search parameter for the date/ time a notice was created in eNotices2 application.</p>
-</div>
-<div class="paragraph">
-<p>“expectedPublicationDate” is assigned by our internal system (TED Monitor) and is the next available OJS issue date based on the <a href="https://ted.europa.eu/en/release-calendar">release calendar</a> from the date the notice was successfully submitted. Notices will be published by default as soon as possible when the eSender has not indicated a Notice Preferred Publication Date (BT-738).</p>
+<p><em>What dates do search parameters "submittedAt", "createdAt", "updatedAt", "transmittedAt" and “expectedPublicationDate” represent?</em></p>
+<div class="ulist">
+<ul>
+<li>
+<p>"<strong>submittedAt</strong>" reflects the value that an eSender inputs in Notice Dispatch Date (BT-05). It is up to the eSender to input a value; as long as the notice passes CVS validation and lawfulness, it will be published.</p>
+</li>
+<li>
+<p>"<strong>updatedAt</strong>" reflects the date the most recent update was done on the notice. For instance, if you stop publication on a submitted notice, the "updatedAt" date will also be updated to reflect that.</p>
+</li>
+<li>
+<p>"<strong>createdAt</strong>" is the date and time the instance/notice was created in eNotices2.</p>
+</li>
+<li>
+<p>"<strong>transmittedAt</strong>" corresponds to the date and time of the BT-803 (Notice Dispatch Date eSender) in the XML, if present. When not provided, the value will be returned as "null".</p>
+</li>
+<li>
+<p>“<strong>expectedPublicationDate</strong>” is assigned by our internal system (TED Monitor) and is the next available OJS issue date based on the <a href="https://ted.europa.eu/en/release-calendar">release calendar</a> from the date the notice was successfully submitted. Notices will be published by default as soon as possible when the eSender has not indicated a Notice Preferred Publication Date (BT-738).</p>
+</li>
+</ul>
 </div>
 </li>
 </ol>
@@ -1670,7 +1721,7 @@ If the date is not filled, the unpublished fields will never be published (and t
 <p>Any Contracting Authority may publish an eForms Notice in one or more of the EU Official languages.
 The chosen languages are considered of equal status. EU Institutions publishing eForms Notices are obliged to publish them in all 24 EU Official languages.</p>
 <div class="paragraph">
-<p>If more than one language is chosen, all text content of the Notice is capable of being expressed in different languages
+<p>If more than one language is chosen, all text content of the Notice that can be expressed in different languages,
 must be expressed in all chosen languages. Due to the technical requirements of UBL, only one language may be specified
 using the element &lt;cbc:NoticeLanguageCode&gt;; the others must use the element &lt;cbc:ID&gt; within the element &lt;cac:AdditionalNoticeLanguage&gt;.
 There is no implication or meaning to the choice of which language is specified using &lt;cbc:NoticeLanguageCode&gt;.</p>
@@ -1823,8 +1874,7 @@ that was provided for information and clarification purposes.</p>
 </li>
 <li>
 <p><em>Are the error messages returned by CVS translated?</em></p>
-<p>Translations of the messages that can be returned by CVS when rules are not respected are still work in progress
-and are progressively added in the <a href="https://github.com/OP-TED/eForms-SDK/tree/develop/translations">translations</a> file on the SDK on GitHub.
+<p>Translations of the messages that can be returned by CVS when rules are not respected can be found in the <a href="https://github.com/OP-TED/eForms-SDK/tree/develop/translations">translations</a> file on the SDK on GitHub.
 When calling CVS API, the “text” element in the validation report will be returned in the language you passed as a parameter to your request.</p>
 </li>
 <li>
@@ -1871,15 +1921,6 @@ that can be linked to the technical validation rules. For the time being, all in
 but ideas for documenting rules are welcome.</p>
 </li>
 <li>
-<p><em>Will we receive translations for the error messages that are foreseen in the Schematron validation files?</em></p>
-<p>We are currently working on creating translations for the error messages in the Schematron validation files.
-These will be included in a future release of the eForms SDK.</p>
-<div class="paragraph">
-<p>In the future, users will be able to decide in which of the 24 languages they would like to receive the returned validation report
-in Schematron Validation Report Language (SVRL).</p>
-</div>
-</li>
-<li>
 <p><em>If a field is mandatory but left empty or if a code choice is mandatory but not chosen, will the notice be rejected and not published? Are there no "content" checks beyond that, for example if a monetary value doesn&#8217;t make sense?</em></p>
 <p>If mandatory fields are not filled in, it will not be possible to submit the corresponding notice and the notice will, therefore, be rejected.
 There will be several additional business rules that will check the validity of the content of different fields, i.e., combinations of
@@ -1912,7 +1953,7 @@ terminology) as on TED (which follows the EU terminology).</p>
 </li>
 <li>
 <p><em>What are the technical restrictions in eForms?</em></p>
-<p>There will be some throttling to prevent possible abuse of the system. The new eNotices2 application has a limit of 2000 Lots for the user interface, however, OP may decide to impose lower limits in the future.</p>
+<p>There will be some throttling to prevent possible abuse of the system. OP will discuss and decide at a later stage whether there should be limits imposed on number of lots and organisations.</p>
 <div class="paragraph">
 <p>The technical limit for the number of LOTs is 9999. This is because the technical identifier of a LOT is
 "LOT-" followed by four digits. The identifier value "LOT-0000" is reserved as a "technical" lot for Procedures without LOTs.</p>
@@ -1930,6 +1971,8 @@ regular expression patterns associated with the relevant fields, within "pattern
 <li>
 <p><em>With eForms, is the Publications Office validating the dispatch date of notices?</em></p>
 <p>Regarding dispatch dates, also referred to across the directives as ‘transmitted’, ‘sent’ or ‘dispatched’, there are two business terms:</p>
+<div class="openblock">
+<div class="content">
 <div class="ulist">
 <ul>
 <li>
@@ -1939,6 +1982,8 @@ regular expression patterns associated with the relevant fields, within "pattern
 <p>(since November 2022 amendment) eSender dispatch date (BT-803) – when the notice is sent by the eSender via the API; it is optional, but it could be mandatory in the future.</p>
 </li>
 </ul>
+</div>
+</div>
 </div>
 <div class="paragraph">
 <p>There shouldn’t be any time discrepancies when it comes to the dispatch date (i.e. it cannot be 1 day before the day of submission or after the current time, etc.),
@@ -2104,130 +2149,158 @@ of the <a href="https://op.europa.eu/en/publication-detail/-/publication/73a7848
 </div>
 </div>
 </article>
+    <div id="widgetContainer">
+      <article class="widget">
+<div class="widget-title">
+    <p>Access other sites in the TED family</p>
+  </div>
+  <div class="links">
+    <a href="https://enotices2.ted.europa.eu/" target="_blank">eNotices2</a>
+    <a href="https://developer.ted.europa.eu/" target="_blank">TED Developer Portal</a>
+    <a href="https://ted.europa.eu/" target="_blank">TED Website</a>
+  </div>
+</article>
+    </div>
   </div>
 </main>
-</div>
+
+<script>
+  // Get the current URL
+  var url = window.location.href;
+
+  // Check if the URL ends with 'home/index.html'
+  if (!url.endsWith('/home/index.html')) {
+    // If it doesn't, hide the widget
+    document.getElementById('widgetContainer').style.display = 'none';
+  }
+</script></div>
 <script src="../../_/js/site.js"></script>
 <script async src="../../_/js/vendor/highlight.js"></script>
 <script src="../../_/js/vendor/docsearch-2.6.3.js"></script>
 <script src="../../_/js/vendor/search-algolia.js" id="search-script" data-api-key="7bd6f4bbe2cb3188cd99f1625cb00f75" data-api-id="BE8MR7O2G7" data-index-name="ted-docs-idx"></script>
-<style type="text/css">@import url('/documents/d/global/custom');</style>
+<style type="text/css">
+    @import url('/documents/d/global/custom');
+</style>
 
 <div class="footer">
-  <div class="three-columns">
+    <div class="three-columns">
 
-      <div class="col-md-12 col-lg-4">
-          <div class="ls-footer-logo-DD"><a href="https://docs.ted.europa.eu/home/index.html"><img alt="TED Developer Docs" class="ls-op" src="../../_/img/ted-logo-footer2.png" height="48"/></a></div>
-      </div>
+        <div class="col-md-12 col-lg-4">
+            <div class="ls-footer-logo-DD"><a href="https://docs.ted.europa.eu/home/index.html"><img
+                        alt="TED Developer Docs" class="ls-op" src="../../_/img/ted-logo-footer2.png"
+                        height="48" /></a></div>
+            <span class="ted-footer__title ted-footer__title--main"></span>
+            <div class="ted-footer__rich-text">
+                <p>This website is managed by:
+                    <u>
+                        <a href="https://op.europa.eu/en/home" target="_blank">Publications Office of the European
+                            Union</a>
+                    </u>
+                </p>
 
-      <div class="col-md-12 col-lg-4">
+            </div>
+        </div>
 
-          <h3 class="h3-footer">Need Help?</h3>
-          <ul class="ul-footer">
-              <li class="li-footer"><a href="https://ted.europa.eu/en/help-page">Help</a></li>
-              <li class="li-footer"><a href="https://simap.ted.europa.eu/contact">Contact the TED Helpdesk</a></li>
-          </ul>
+        <div class="col-md-12 col-lg-4">
 
-          <h3 class="h3-footer">Follow us</h3>
-          <ul class="ul-footer">
-              <li>
-                  <a href="https://twitter.com/eulawdatapubs"> <img src="../../_/img/twitter.svg" class="icon-footer"/><span>Twitter</span></a>
-                  <a href="https://www.youtube.com/playlist?list=PLT5rARDev_rkQdFimoHlpv2Och1H0uBLs"><img src="../../_/img/youtube.svg" class="icon-footer-2nd"/><span>YouTube</span></a>
-              </li>
-          </ul>
+            <h3 class="ted-footer__title">Need Help?</h3>
+            <ul class="ul-footer">
+                <li class="li-footer"><a href="https://ted.europa.eu/en/help-page">Help</a></li>
+                <li class="li-footer"><a href="https://ted.europa.eu/en/contact">Contact the TED Helpdesk</a></li>
+            </ul>
 
-          <h3 class="h3-footer">Legal</h3>
-          <ul class="ul-footer">
-              <li class="li-footer"><a href="https://op.europa.eu/en/web/about-us/legal-notices/accessibility-statement">Accessibility</a></li>
-          </ul>
+            <h3 class="ted-footer__title">Follow us</h3>
+            <ul class="ul-footer">
+                <li class="li-footer">
+                    <a href="https://twitter.com/EUTenders"> <img src="../../_/img/twitter.svg"
+                            class="icon-footer" /><span>X/Twitter</span></a>
+                    <a href="https://www.youtube.com/playlist?list=PLT5rARDev_rkQdFimoHlpv2Och1H0uBLs"><img
+                            src="../../_/img/youtube.svg" class="icon-footer-2nd" /><span>YouTube</span></a>
+                </li>
+            </ul>
 
-      </div>
+            <h3 class="ted-footer__title">Legal</h3>
+            <ul class="ul-footer">
+                <li class="li-footer"><a href="https://ted.europa.eu/en/legal-notice" target="_blank">Legal Notice</a>
+                </li>
+                <li class="li-footer"><a href="https://ted.europa.eu/en/cookie-choice" target="_blank">Cookies</a>
+                </li>
+                <li class="li-footer"><a
+                        href="https://ted.europa.eu/en/accessibility"
+                        target="_blank">Accessibility</a>
+                </li>
+            </ul>
 
-      <div class="col-md-12 col-lg-4">
+        </div>
 
-          <h3 class="h3-footer">About us</h3>
-          <ul class="ul-footer">
-              <li class="li-footer"><a href="https://op.europa.eu/en/web/about-us/about-publication-office-of-the-european-union">Our mission, vision, and values</a></li>
-              <li class="li-footer"><a href="https://op.europa.eu/en/web/general-publications/">Newsletter</a></li>
-          </ul>
+        <div class="col-md-12 col-lg-4">
 
-          <h3 class="h3-footer">Other services</h3>
-          <ul class="ul-footer">
-              <li class="li-footer"><a href="https://ted.europa.eu/TED/main/HomePage.do">EU tenders</a></li>
-              <li class="li-footer"><a href="https://data.europa.eu/en">European data</a></li>
-              <li class="li-footer"><a href="https://op.europa.eu/en/web/eu-vocabularies">EU vocabularies</a></li>
-              <li class="li-footer"><a href="https://cordis.europa.eu/">EU research results</a></li>
-              <li class="li-footer"><a href="https://op.europa.eu/en/web/who-is-who">EU Whoiswho</a></li>
-              <li class="li-footer"><a href="/web/librarians-corner">EU publications</a></li>
-          </ul>
-      </div>
-  </div>
+            <h3 class="ted-footer__title">About us</h3>
+            <ul class="ul-footer">
+                <li class="li-footer"><a href="https://ted.europa.eu/">About TED</a></li>
+            </ul>
 
-  <div class="three-columns">
-      <div class="col-md-12 col-lg-4">
-          <!--<h2 class="sr-only" id="section-title-op">Publications Office of the European Union</h2> -->
+            <h3 class="ted-footer__title">Other services</h3>
+            <ul class="ul-footer">
+                <li class="li-footer"><a href="https://ted.europa.eu/TED/main/HomePage.do">EU tenders</a></li>
+                <li class="li-footer"><a href="https://data.europa.eu/en">European data</a></li>
+                <li class="li-footer"><a href="https://op.europa.eu/en/web/eu-vocabularies">EU vocabularies</a></li>
+                <li class="li-footer"><a href="https://cordis.europa.eu/">EU research results</a></li>
+                <li class="li-footer"><a href="https://op.europa.eu/en/web/who-is-who">EU Whoiswho</a></li>
+                <li class="li-footer"><a href="/web/librarians-corner">EU publications</a></li>
+            </ul>
+        </div>
+    </div>
 
-          <div class="ls-footer-logo"><a aria-labelledby="section-title-op" href="/"><img alt="European Union" class="ls-op" /></a></div>
-          <p class="byline-footer">Discover more on <a class="ls-underline" href="https://europa.eu/en/home"><span style="word-break: keep-all; white-space: nowrap; text-decoration: underline!important">europa.eu</span></a></p>
-          <div style="margin-top: 20px" >
-            <h3>This website is managed by<h3>
-            <img src="../../_/img/op-logo-with-name.svg" class="logo" />
-          </div>
+    <div class="three-columns">
+        <div class="col-md-12 col-lg-4">
+            <!--<h2 class="sr-only" id="section-title-op">Publications Office of the European Union</h2> -->
 
-      </div>
-      <div class="col-md-12 col-lg-4">
-          <h3 class="h3-footer">Contact the EU</h3>
+            <div class="ls-footer-logo"><a aria-labelledby="section-title-op" href="/"><img alt="European Union"
+                        class="ls-op" /></a></div>
+            <span class="ted-footer__title ted-footer__title--main"></span>
+           
+            <div class="ted-footer__rich-text">
+                <p class="byline-footer">Discover more on <a class="ls-underline" href="https://europa.eu/en/home"><span
+                            style="word-break: keep-all; white-space: nowrap; text-decoration: underline!important">europa.eu</span></a>
+                </p>
 
-          <ul class="ul-footer">
-              <li class="li-footer"><a href="tel:0080067891011">Call us 00 800 6 7 8 9 10 11</a></li>
-              <li class="li-footer"><a href="https://european-union.europa.eu/contact-eu/call-us_en">Use other Telephone options</a></li>
-              <li class="li-footer"><a href="https://european-union.europa.eu/contact-eu/write-us_en">Write to us via our contact forms</a></li>
-              <li class="li-footer"><a href="https://european-union.europa.eu/contact-eu/meet-us_en">Meet us at one of the EU centres</a></li>
+            </div>
+        </div>
+        <div class="col-md-12 col-lg-4">
+            <h3 class="ted-footer__title">Contact the EU</h3>
 
-          </ul>
+            <ul class="ul-footer">
+                <li class="li-footer"><a href="tel:0080067891011">Call us 00 800 6 7 8 9 10 11</a></li>
+                <li class="li-footer"><a href="https://european-union.europa.eu/contact-eu/call-us_en">Use other
+                        Telephone options</a></li>
+                <li class="li-footer"><a href="https://european-union.europa.eu/contact-eu/write-us_en">Write to us via
+                        our contact forms</a></li>
+                <li class="li-footer"><a href="https://european-union.europa.eu/contact-eu/meet-us_en">Meet us at one of
+                        the EU centres</a></li>
 
-          <h3 class="h3-footer">Social Media</h3>
-          <ul class="ul-footer">
-              <li class="li-footer"><a href="https://european-union.europa.eu/contact-eu/social-media-channels_en#/search"><i aria-hidden="true" class="gs-icon-twitter"></i>Search of EU social media channels</a></li>
+            </ul>
 
-          </ul>
+        </div>
+        <div class="col-md-12 col-lg-4">
+             <h3 class="ted-footer__title">Social Media</h3>
+            <ul class="ul-footer">
+                <li class="li-footer"><a
+                        href="https://european-union.europa.eu/contact-eu/social-media-channels_en#/search"><i
+                            aria-hidden="true" class="gs-icon-twitter"></i>Search of EU social media channels</a></li>
 
-          <h3 class="h3-footer">Legal</h3>
+            </ul>
+            <h3 class="ted-footer__title">EU institutions and bodies</h3>
 
-          <ul class="ul-footer">
-              <li class="li-footer"><a aria-labelledby="section-title-op" href="https://european-union.europa.eu/languages-our-websites_en">Languages on our website</a></li>
-              <li class="li-footer"><a aria-labelledby="section-title-op" href="https://european-union.europa.eu/privacy-policy-european-union-website_en">Privacy Policy</a></li>
-              <li class="li-footer"><a aria-labelledby="section-title-op" href="https://european-union.europa.eu/legal-notice_en">Legal notice</a></li>
-              <li class="li-footer"><a aria-labelledby="section-title-op" href="https://european-union.europa.eu/cookies_en">Cookies</a></li>
-          </ul>
-      </div>
-      <div class="col-md-12 col-lg-4">
-          <h3 class="h3-footer">EU institutions</h3>
+            <ul class="ul-footer">
+                <li class="li-footer institutions"><a href="https://european-union.europa.eu/institutions-law-budget/institutions-and-bodies/search-all-eu-institutions-and-bodies_en">Search all EU institutions and bodies</a></li>
+               
+            </ul>
+        </div>
 
-          <ul class="ul-footer">
-              <li class="li-footer"><a href="https://www.europarl.europa.eu/portal/en">European Parliament</a></li>
-              <li class="li-footer"><a href="https://www.consilium.europa.eu/en/european-council/">European Council</a></li>
-              <li class="li-footer"><a href="https://www.consilium.europa.eu/en/">Council of the European Union</a></li>
-              <li class="li-footer"><a href="https://commission.europa.eu/index_en">European Commission</a></li>
-              <li class="li-footer"><a href="https://curia.europa.eu/jcms/jcms/j_6/en/">Court of Justice of the European Union (CJEU)</a></li>
-              <li class="li-footer"><a href="https://www.ecb.europa.eu/home/html/index.en.html">European Central Bank (ECB)</a></li>
-              <li class="li-footer"><a href="http://www.eca.europa.eu/en">European Court of Auditors (ECA)</a></li>
-              <li class="li-footer"><a href="https://www.eeas.europa.eu/_en">European External Action Services (EEAS)</a></li>
-              <li class="li-footer"><a href="https://www.eesc.europa.eu/en">European Economic and Social Committee (EESC)</a></li>
-              <li class="li-footer"><a href="https://cor.europa.eu/en/">European Committee of the Regions (CoR)</a></li>
-              <li class="li-footer"><a href="https://www.eib.org/en/index.htm">European Investment Bank (EIB)</a></li>
-              <li class="li-footer"><a href="https://www.ombudsman.europa.eu/en/home">European Ombudsman</a></li>
-              <li class="li-footer"><a href="https://edps.europa.eu/_en?lang=en">European Data Protection Supervisor (EDPS)</a></li>
-              <li class="li-footer"><a href="https://edpb.europa.eu/edpb_en">European Data protection Board</a></li>
-              <li class="li-footer"><a href="https://eu-careers.europa.eu/en">European Personnel Selection Office</a></li>
-              <li class="li-footer"><a href="https://op.europa.eu/en/home">Publications Office of the European Union</a></li>
-              <li class="li-footer"><a href="https://european-union.europa.eu/institutions-law-budget/institutions-and-bodies/search-all-eu-institutions-and-bodies_en?f%5B0%5D=oe_organisation_eu_type%3Ahttp%3A//publications.europa.eu/resource/authority/corporate-body-classification/AGENCY_DEC&f%5B1%5D=oe_organisation_eu_type%3Ahttp%3A//publications.europa.eu/resource/authority/corporate-body-classification/AGENCY_EXEC&f%5B2%5D=oe_organisation_eu_type%3Ahttp%3A//publications.europa.eu/resource/authority/corporate-body-classification/EU_JU">Agencies</a></li>
-          </ul>
-      </div>
-
-      <script>
-        ECL.autoInit();
-      </script>
-  </div>
+        <script>
+            ECL.autoInit();
+        </script>
+    </div>
 </div>  </body>
 </html>
