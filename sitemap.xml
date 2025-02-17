@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <sitemap>
-<loc>https://docs.ted.europa.eu/sitemap-eforms.xml</loc>
-</sitemap>
-<sitemap>
-<loc>https://docs.ted.europa.eu/sitemap-eforms-common.xml</loc>
-</sitemap>
-<sitemap>
 <loc>https://docs.ted.europa.eu/sitemap-home.xml</loc>
 </sitemap>
 <sitemap>
