@@ -10,27 +10,4 @@ Access the Training Course
 
 <<training:ROOT:index.adoc#, Training Course>>
 ****
-
-
-****
-
-////
-[.tile]
-.TED Open Data
-****
-The TED Open Data Service allows machine-to-machine interaction with public procurement data. It provides open access to current and historical TED data through direct queries to our SPARQL endpoint.
-
-[.button]
-<<ODS:ROOT:index.adoc#, Read the docs>>
-****
-
-[.tile]
-.Reusing TED Data 
-****
-Learn how to download TED notices in various formats via the TED Website and API. Daily or monthly packages are available.
-
-<<reuse:ROOT:index.adoc#, Read the docs>>
-
-****
-////
 --
