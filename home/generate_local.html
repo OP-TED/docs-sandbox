@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Untitled :: TED Developer Documentation</title>
+    <title>Generating the documentation locally :: TED Developer Documentation</title>
     <link rel="canonical" href="https://docs.ted.europa.eu/home/generate_local.html">
     <meta name="generator" content="Antora 3.1.2">
     <link rel="stylesheet" href="../_/css/site.css">
@@ -127,6 +127,10 @@
 <button class="nav-toggle"></button>
   <a href="index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Developer Docs</a></li>
+    <li><a href="generate_local.html">Generating the documentation locally</a></li>
+  </ul>
 </nav>
 </div>
   <div class="content">
@@ -134,7 +138,48 @@
   <div class="toc-menu"></div>
 </aside>
     <article class="doc">
-
+<h1 class="page">Generating the documentation locally</h1>
+<div class="paragraph">
+<p>Once you have cloned this repository locally and have gone through all the steps in the set-up, as per the short course provided (link on the home page: <a href="https://docs.ted.europa.eu/docs-sandbox/home/index.html" class="bare">https://docs.ted.europa.eu/docs-sandbox/home/index.html</a>, do the following:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open the docs-sandbox repository in VSC</p>
+</li>
+<li>
+<p>Rename the extention of the antora-playbook-local.txt to .yml</p>
+</li>
+<li>
+<p>Open a bash terminal window</p>
+</li>
+<li>
+<p>generate the documentation using the command <strong>antora antora-playbook-local.yml</strong> locally making sure that:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>You have added/ deleted/ amended the docs repos you want to generate in the antora-playbook-local.yml</p>
+</li>
+<li>
+<p>If you are generating these from your local c: drive, you have pulled/ fetched the latest changes from GitHub for each of these docs repos</p>
+</li>
+<li>
+<p>You are using the latest ui - you can also clone these locally or use the online ones as per the playbook settings on the acceptance site, docs-staging. See what these are online.</p>
+</li>
+<li>
+<p>You have installed and have running the Live Server extension in VSC: then browse to \docs-sandbox\build\site locally (from the folder where docs-sandbox was cloned to locally) to view the site "http://127.0.0.1:5500/build/site/home/index.html"</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>From now on you can use docs-sandbox locally to generate the whole docs website, i.e. all repositories as if you were actually on the web. This will give you a better view that generating each docs repo in isolation while you are working on it.</p>
+</div>
+<div class="paragraph">
+<p>Do not push any changes you make on docs-sandbox back to GitHub, this is for you to use locally only.</p>
+</div>
 </article>
     <div id="widgetContainer">
       <article class="widget">
