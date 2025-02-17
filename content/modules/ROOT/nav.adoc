@@ -3,7 +3,7 @@
 
 * [.separated]#**Training Environment**#
 * xref:training::index.adoc[Training course]
-
+* xref:generate_local.adoc[Generating the docs website locally]
 
 ////
 * [.separated]#**eForms SDK**#
