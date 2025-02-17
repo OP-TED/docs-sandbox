@@ -2,8 +2,8 @@
 * xref:index.adoc[Home]
 
 * [.separated]#**Training Environment**#
-* xref:training::index.adoc[Training Documents]
-* xref:materials::index.adoc[Materials]
+* xref:training::index.adoc[Training course]
+
 
 ////
 * [.separated]#**eForms SDK**#
