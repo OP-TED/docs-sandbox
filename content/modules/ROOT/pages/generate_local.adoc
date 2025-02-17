@@ -1,1 +1,16 @@
+= Generating the documentation locally
 
+Once you have cloned this repository locally and have gone through all the steps in the set-up, as per the short course provided (link on the home page: https://docs.ted.europa.eu/docs-sandbox/home/index.html, do the following:
+
+. Open the docs-sandbox repository in VSC
+. Rename the extention of the antora-playbook-local.txt to .yml
+. Open a bash terminal window
+. generate the documentation using the command *antora antora-playbook-local.yml* locally making sure that:
+.. You have added/ deleted/ amended the docs repos you want to generate in the antora-playbook-local.yml
+.. If you are generating these from your local c: drive, you have pulled/ fetched the latest changes from GitHub for each of these docs repos
+.. You are using the latest ui - you can also clone these locally or use the online ones as per the playbook settings on the acceptance site, docs-staging. See what these are online.
+.. You have installed and have running the Live Server extension in VSC: then browse to \docs-sandbox\build\site locally (from the folder where docs-sandbox was cloned to locally) to view the site "http://127.0.0.1:5500/build/site/home/index.html"
+
+From now on you can use docs-sandbox locally to generate the whole docs website, i.e. all repositories as if you were actually on the web. This will give you a better view that generating each docs repo in isolation while you are working on it.
+
+Do not push any changes you make on docs-sandbox back to GitHub, this is for you to use locally only.
