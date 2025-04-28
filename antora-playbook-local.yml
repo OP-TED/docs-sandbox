@@ -46,19 +46,19 @@ content:
     branches: materials, v1.0.0
 
   ### eForms SDK
-  - url: https://github.com/OP-TED/eforms-docs.git
-    start_path: /
-    branches: 1.13.x, 1.12.x, 1.11.x, 1.11.x-generated, 1.10.x, 1.10.x-generated, 1.9.x, 1.9.x-generated, 1.8.x, 1.8.x-generated, 1.7.x, 1.7.x-generated, 1.6.x, 1.6.x-generated, 1.5.x, 1.5.x-generated , 1.4.x, 1.4.x-generated, main # The "main" branch contains the eForms FAQ and RoadMap
+  #- url: https://github.com/OP-TED/eforms-docs.git
+  #  start_path: /
+  #  branches: 1.13.x, 1.12.x, 1.11.x, 1.11.x-generated, 1.10.x, 1.10.x-generated, 1.9.x, 1.9.x-generated, 1.8.x, 1.8.x-generated, 1.7.x, 1.7.x-generated, 1.6.x, 1.6.x-generated, 1.5.x, 1.5.x-generated , 1.4.x, 1.4.x-generated, main # The "main" branch contains the eForms FAQ and RoadMap
 
   ###  ESPD
   - url: C:\Users\paterni\Code\espd-docs\
     start_path: /
-    branches: main_roles, v1.0.x, v2.0.x, v2.1.x, v3.0.x, v3.1.x, v3.2.x, v3.3.x, v4.0.0, wgm-reports
+    branches: main_roles, v1.0.x, v2.0.x, v2.1.x, v3.0.x, v3.1.x, v3.2.x, v3.3.x, v4.0.x, v5_img2code
 
   ### TED API
   - url: C:\Users\paterni\Code\tedapi-docs\
     start_path: /
-    branches: v2.0, v3.0-rc.2 # The "main" branch contains unversioned content.
+    branches: v2.0, v3.0 # The "main" branch contains unversioned content.
 
   ### model2owl
   - url: C:\Users\paterni\Code\ted-model2owl-docs
@@ -68,12 +68,12 @@ content:
   ### TED Open Data Service
   - url: C:\Users\paterni\Code\ted-rdf-docs
     start_path: docs/antora
-    branches: develop
+    branches: spelling_corrections
 
   ### ePO Documentation
   - url: C:\Users\paterni\Code\epo-docs
     start_path: /
-    branches: main-wf, workflow-imp, v*, wg-meetings
+    branches: main-wf, v*, wg-meetings, workflow-imp-cosmetic-changes
 
 urls:
   redirect_facility: static
@@ -84,7 +84,7 @@ ui:
   bundle:
     url: https://github.com/OP-TED/antora-eui/releases/download/ui-bundle/master/ui-bundle.zip
     snapshot: true
-  supplemental_files: C:\Users\paterni\Code\docs-staging\content\supplemental-ui
+  supplemental_files: ./content/supplemental-ui
 
 git:
   fetch_concurrency: 1
