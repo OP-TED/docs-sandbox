@@ -25,6 +25,9 @@
 * [.separated]#**model2owl**#
 * xref:m2o-home::index.adoc[model2owl Docs `1.0`]
 
+* [.separated]#**Training Environment**#
+* xref:training::index.adoc[Training Documents]
+
 ////
 * xref:index.adoc[Home]
 
