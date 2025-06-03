@@ -29,7 +29,7 @@ asciidoc:
     #
     eforms_latest_version: '1.13.0'
     epo_latest_version: '5.0.0'
-    espd_latest_version: '4.0.0'
+    espd_latest_version: '5.0.0'
   # extensions:
   # - ./lib/apidoc/apidoc-asciidoc-extension
 
@@ -53,7 +53,7 @@ content:
   ###  ESPD
   - url: C:\Users\paterni\Code\espd-docs\
     start_path: /
-    branches: main_roles, v1.0.x, v2.0.x, v2.1.x, v3.0.x, v3.1.x, v3.2.x, v3.3.x, v4-A1-feedback, v5.0.x
+    branches: main, v1.0.x, v2.0.x, v2.1.x, v3.0.x, v3.1.x, v3.2.x, v3.3.x, v4-A1-feedback, V5_img2table
 
   ### TED API
   - url: C:\Users\paterni\Code\tedapi-docs\
