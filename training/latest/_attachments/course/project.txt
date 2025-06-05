@@ -142,7 +142,7 @@
 {
 "id":"Slide26930",
 "class":"Normal Slide",
-"instance":"Blank 1",
+"instance":"Course title",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -279,7 +279,7 @@
 {
 "id":"Slide388",
 "class":"Normal Slide",
-"instance":"Welcome to the Course",
+"instance":"Welcome to the course",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -442,7 +442,7 @@
 {
 "id":"Slide1057",
 "class":"Normal Slide",
-"instance":"Course Overview",
+"instance":"Course overview",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -2037,7 +2037,7 @@
 {
 "id":"Slide1242",
 "class":"Normal Slide",
-"instance":"Course Prerequisites",
+"instance":"Course prerequisites",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -2213,7 +2213,7 @@
 {
 "id":"Slide1448",
 "class":"Normal Slide",
-"instance":"Prerequisites - Install Git",
+"instance":"Prerequisites - install Git",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -2389,7 +2389,7 @@
 {
 "id":"Slide1706",
 "class":"Normal Slide",
-"instance":"Prerequisites - Internet Proxy",
+"instance":"Prerequisites - internet proxy",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -2578,7 +2578,7 @@
 {
 "id":"Slide1891",
 "class":"Normal Slide",
-"instance":"Prerequisites - Clone Repositories",
+"instance":"Prerequisites - clone repositories",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -2780,7 +2780,7 @@
 {
 "id":"Slide2076",
 "class":"Normal Slide",
-"instance":"Prerequisites -Visual Studio Code",
+"instance":"Prerequisites -visual studio code",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -4498,7 +4498,7 @@
 {
 "id":"Slide32369",
 "class":"Normal Slide",
-"instance":"Prerequisites - VSC Live Server Extension",
+"instance":"Prerequisites - VSC live server Extension",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -6133,7 +6133,7 @@
 {
 "id":"Slide33262",
 "class":"Normal Slide",
-"instance":"Blank 2",
+"instance":"Prerequisites - Inside vsc",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -7343,7 +7343,7 @@
 {
 "id":"Slide6658",
 "class":"Normal Slide",
-"instance":"Lesson 1 - Learning Objectives",
+"instance":"Lesson 1 - Learning objectives",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -7545,7 +7545,7 @@
 {
 "id":"Slide28943",
 "class":"Normal Slide",
-"instance":"Lesson 1 - Learning Outcomes",
+"instance":"Lesson 1 - Learning outcomes",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -9978,7 +9978,7 @@
 {
 "id":"Slide8216",
 "class":"Normal Slide",
-"instance":"Lesson 1 - OP-TED Docs Repositories",
+"instance":"Lesson 1 - OP-TED Docs repositories",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -10167,7 +10167,7 @@
 {
 "id":"Slide25161",
 "class":"Normal Slide",
-"instance":"Lesson 1 - OP-TED Docs Repositories Transcript",
+"instance":"Lesson 1 - OP-TED Docs repositories Transcript",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -10483,7 +10483,7 @@
 {
 "id":"Slide30288",
 "class":"Normal Slide",
-"instance":"Lesson 1 - The Antora Engine",
+"instance":"Lesson 1 -  Antora engine",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -10646,7 +10646,7 @@
 {
 "id":"Slide25277",
 "class":"Normal Slide",
-"instance":"Lesson 1 - The Antora Engine Transcript",
+"instance":"Lesson 1 - Antora engine transcript",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -10809,7 +10809,7 @@
 {
 "id":"Slide8718",
 "class":"Normal Slide",
-"instance":"Lesson 1 - Branches and Versions",
+"instance":"Lesson 1 - Branches and versions",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -12224,7 +12224,7 @@
 {
 "id":"Slide9694",
 "class":"Normal Slide",
-"instance":"Lesson 2 - Learning Objectives",
+"instance":"Lesson 2 - Learning objectives",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -12571,7 +12571,7 @@
 {
 "id":"Slide30487",
 "class":"Normal Slide",
-"instance":"Lesson 2 - Learning Outcomes",
+"instance":"Lesson 2 - Learning outcomes",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -12734,7 +12734,7 @@
 {
 "id":"Slide10080",
 "class":"Normal Slide",
-"instance":"Lesson 2 - Jira Tickets",
+"instance":"Lesson 2 - Jira tickets",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -12910,7 +12910,7 @@
 {
 "id":"Slide10278",
 "class":"Normal Slide",
-"instance":"Lesson 2 - GitHub Issues",
+"instance":"Lesson 2 - GitHub issues",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -15445,7 +15445,7 @@
 {
 "id":"Slide12258",
 "class":"Normal Slide",
-"instance":"Lesson 2 - Cloning a Repository",
+"instance":"Lesson 2 - Cloning a repository",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -15595,7 +15595,7 @@
 {
 "id":"Slide13242",
 "class":"Normal Slide",
-"instance":"Lesson 2 - Working on a Previously Cloned Repository",
+"instance":"Lesson 2 - Working on a previously Cloned Repository",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -19113,7 +19113,7 @@
 {
 "id":"Slide15352",
 "class":"Normal Slide",
-"instance":"Lesson 2 - viewing changes locally",
+"instance":"Lesson 2 - Viewing changes locally",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -20898,7 +20898,7 @@
 {
 "id":"Slide16314",
 "class":"Normal Slide",
-"instance":"Lesson 2 - Commiting and Pushing Changes to GitHub",
+"instance":"Lesson 2 - Commiting and pushing changes to GitHub",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -21284,7 +21284,7 @@
 {
 "id":"Slide17270",
 "class":"Normal Slide",
-"instance":"Lesson 2 - Generating Changes on a Staging Site",
+"instance":"Lesson 2 - Generating changes on a Staging Site",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -21656,7 +21656,7 @@
 {
 "id":"Slide28727",
 "class":"Normal Slide",
-"instance":"Lesson 2 - Generating Changes on a Staging Site_ cint",
+"instance":"Lesson 2 - Generating changes on a Staging Site_ cint",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -22527,7 +22527,7 @@
 {
 "id":"Slide17962",
 "class":"Normal Slide",
-"instance":"Lesson 3 - Learning Objectives",
+"instance":"Lesson 3 - Learning objectives",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -24247,7 +24247,7 @@
 {
 "id":"Slide18354",
 "class":"Normal Slide",
-"instance":"Lesson 3 - Antora Page Elements",
+"instance":"Lesson 3 - Antora page elements",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -24281,7 +24281,7 @@
 {
 "id":"si19444",
 "class":"TODO::Senthil",
-"instance":"antorafiles1_1",
+"instance":"Antora1_1",
 "roles":{
 "click":{
 "subtype":"button"
@@ -24457,7 +24457,7 @@
 {
 "id":"Slide19406",
 "class":"Normal Slide",
-"instance":"Lesson 3 - Antora Raw File Structure",
+"instance":"Lesson 3 - Antora raw file structure",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -24491,7 +24491,7 @@
 {
 "id":"si19748",
 "class":"TODO::Senthil",
-"instance":"2ntorafiles1",
+"instance":"Antora2",
 "roles":{
 "click":{
 "subtype":"button"
@@ -24641,7 +24641,7 @@
 {
 "id":"Slide19710",
 "class":"Normal Slide",
-"instance":"Lesson 3 - Antora_ Important Files",
+"instance":"Lesson 3 - Antora  important files",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -25286,7 +25286,7 @@
 {
 "id":"Slide20130",
 "class":"Normal Slide",
-"instance":"Lesson 3 - Asciidoc Formatting",
+"instance":"Lesson 3 - Asciidoc formatting",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -25726,7 +25726,7 @@
 {
 "id":"Slide20832",
 "class":"Normal Slide",
-"instance":"Lesson 3 - Making Content Visible",
+"instance":"Lesson 3 - Publishing changes",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -25995,7 +25995,7 @@
 {
 "id":"Slide31726",
 "class":"Normal Slide",
-"instance":"Lesson 3 - Making Content visible_ continued",
+"instance":"Lesson 3 - Publishing changes continued",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -26119,7 +26119,7 @@
 {
 "id":"Slide21030",
 "class":"Normal Slide",
-"instance":"Lesson 3 - Finalising Changes",
+"instance":"Lesson 3 - Finalising changes",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -26256,7 +26256,7 @@
 {
 "id":"Slide32030",
 "class":"Normal Slide",
-"instance":"Lesson 3 - Finalising Changes - 1",
+"instance":"Lesson 3 - Finalising changes - continued",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -26813,7 +26813,7 @@
 {
 "id":"Slide22126",
 "class":"Normal Slide",
-"instance":"Lesson 4 - Learning Objectives",
+"instance":"Lesson 4 - Learning objectives",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -28166,7 +28166,7 @@
 {
 "id":"Slide22958",
 "class":"Normal Slide",
-"instance":"Lesson 4 - Task 4 contued (2)",
+"instance":"Lesson 4 - Task 4 continued (2)",
 "thumbnail":"",
 "children":[],
 "roles":{
@@ -28874,15 +28874,15 @@
 }
 ,"toc":[{
 "id":"Slide26930",
-"title":"Blank 1"
+"title":"Course title"
 }
 ,{
 "id":"Slide388",
-"title":"Welcome to the Course"
+"title":"Welcome to the course"
 }
 ,{
 "id":"Slide1057",
-"title":"Course Overview"
+"title":"Course overview"
 }
 ,{
 "id":"Slide686",
@@ -28890,27 +28890,27 @@
 }
 ,{
 "id":"Slide1242",
-"title":"Course Prerequisites"
+"title":"Course prerequisites"
 }
 ,{
 "id":"Slide1448",
-"title":"Prerequisites - Install Git"
+"title":"Prerequisites - install Git"
 }
 ,{
 "id":"Slide1706",
-"title":"Prerequisites - Internet Proxy"
+"title":"Prerequisites - internet proxy"
 }
 ,{
 "id":"Slide1891",
-"title":"Prerequisites - Clone Repositories"
+"title":"Prerequisites - clone repositories"
 }
 ,{
 "id":"Slide2076",
-"title":"Prerequisites -Visual Studio Code"
+"title":"Prerequisites -visual studio code"
 }
 ,{
 "id":"Slide32369",
-"title":"Prerequisites - VSC Live Server Extension"
+"title":"Prerequisites - VSC live server Extension"
 }
 ,{
 "id":"Slide3464",
@@ -28918,7 +28918,7 @@
 }
 ,{
 "id":"Slide33262",
-"title":"Blank 2"
+"title":"Prerequisites - Inside vsc"
 }
 ,{
 "id":"Slide4725",
@@ -28934,11 +28934,11 @@
 }
 ,{
 "id":"Slide6658",
-"title":"Lesson 1 - Learning Objectives"
+"title":"Lesson 1 - Learning objectives"
 }
 ,{
 "id":"Slide28943",
-"title":"Lesson 1 - Learning Outcomes"
+"title":"Lesson 1 - Learning outcomes"
 }
 ,{
 "id":"Slide7232",
@@ -28950,23 +28950,23 @@
 }
 ,{
 "id":"Slide8216",
-"title":"Lesson 1 - OP-TED Docs Repositories"
+"title":"Lesson 1 - OP-TED Docs repositories"
 }
 ,{
 "id":"Slide25161",
-"title":"Lesson 1 - OP-TED Docs Repositories Transcript"
+"title":"Lesson 1 - OP-TED Docs repositories Transcript"
 }
 ,{
 "id":"Slide30288",
-"title":"Lesson 1 - The Antora Engine"
+"title":"Lesson 1 -  Antora engine"
 }
 ,{
 "id":"Slide25277",
-"title":"Lesson 1 - The Antora Engine Transcript"
+"title":"Lesson 1 - Antora engine transcript"
 }
 ,{
 "id":"Slide8718",
-"title":"Lesson 1 - Branches and Versions"
+"title":"Lesson 1 - Branches and versions"
 }
 ,{
 "id":"Slide29047",
@@ -28982,19 +28982,19 @@
 }
 ,{
 "id":"Slide9694",
-"title":"Lesson 2 - Learning Objectives"
+"title":"Lesson 2 - Learning objectives"
 }
 ,{
 "id":"Slide30487",
-"title":"Lesson 2 - Learning Outcomes"
+"title":"Lesson 2 - Learning outcomes"
 }
 ,{
 "id":"Slide10080",
-"title":"Lesson 2 - Jira Tickets"
+"title":"Lesson 2 - Jira tickets"
 }
 ,{
 "id":"Slide10278",
-"title":"Lesson 2 - GitHub Issues"
+"title":"Lesson 2 - GitHub issues"
 }
 ,{
 "id":"Slide30673",
@@ -29014,11 +29014,11 @@
 }
 ,{
 "id":"Slide12258",
-"title":"Lesson 2 - Cloning a Repository"
+"title":"Lesson 2 - Cloning a repository"
 }
 ,{
 "id":"Slide13242",
-"title":"Lesson 2 - Working on a Previously Cloned Repository"
+"title":"Lesson 2 - Working on a previously Cloned Repository"
 }
 ,{
 "id":"Slide14372",
@@ -29026,19 +29026,19 @@
 }
 ,{
 "id":"Slide15352",
-"title":"Lesson 2 - viewing changes locally"
+"title":"Lesson 2 - Viewing changes locally"
 }
 ,{
 "id":"Slide16314",
-"title":"Lesson 2 - Commiting and Pushing Changes to GitHub"
+"title":"Lesson 2 - Commiting and pushing changes to GitHub"
 }
 ,{
 "id":"Slide17270",
-"title":"Lesson 2 - Generating Changes on a Staging Site"
+"title":"Lesson 2 - Generating changes on a Staging Site"
 }
 ,{
 "id":"Slide28727",
-"title":"Lesson 2 - Generating Changes on a Staging Site_ cint"
+"title":"Lesson 2 - Generating changes on a Staging Site_ cint"
 }
 ,{
 "id":"Slide17656",
@@ -29046,19 +29046,19 @@
 }
 ,{
 "id":"Slide17962",
-"title":"Lesson 3 - Learning Objectives"
+"title":"Lesson 3 - Learning objectives"
 }
 ,{
 "id":"Slide18354",
-"title":"Lesson 3 - Antora Page Elements"
+"title":"Lesson 3 - Antora page elements"
 }
 ,{
 "id":"Slide19406",
-"title":"Lesson 3 - Antora Raw File Structure"
+"title":"Lesson 3 - Antora raw file structure"
 }
 ,{
 "id":"Slide19710",
-"title":"Lesson 3 - Antora_ Important Files"
+"title":"Lesson 3 - Antora  important files"
 }
 ,{
 "id":"Slide31526",
@@ -29066,7 +29066,7 @@
 }
 ,{
 "id":"Slide20130",
-"title":"Lesson 3 - Asciidoc Formatting"
+"title":"Lesson 3 - Asciidoc formatting"
 }
 ,{
 "id":"Slide20528",
@@ -29074,19 +29074,19 @@
 }
 ,{
 "id":"Slide20832",
-"title":"Lesson 3 - Making Content Visible"
+"title":"Lesson 3 - Publishing changes"
 }
 ,{
 "id":"Slide31726",
-"title":"Lesson 3 - Making Content visible_ continued"
+"title":"Lesson 3 - Publishing changes continued"
 }
 ,{
 "id":"Slide21030",
-"title":"Lesson 3 - Finalising Changes"
+"title":"Lesson 3 - Finalising changes"
 }
 ,{
 "id":"Slide32030",
-"title":"Lesson 3 - Finalising Changes - 1"
+"title":"Lesson 3 - Finalising changes - continued"
 }
 ,{
 "id":"Slide21228",
@@ -29094,7 +29094,7 @@
 }
 ,{
 "id":"Slide22126",
-"title":"Lesson 4 - Learning Objectives"
+"title":"Lesson 4 - Learning objectives"
 }
 ,{
 "id":"Slide22330",
@@ -29122,7 +29122,7 @@
 }
 ,{
 "id":"Slide22958",
-"title":"Lesson 4 - Task 4 contued (2)"
+"title":"Lesson 4 - Task 4 continued (2)"
 }
 ,{
 "id":"Slide26196",
