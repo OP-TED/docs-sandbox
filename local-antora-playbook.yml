@@ -9,10 +9,10 @@ site:
 #    require: ./lib/apidoc/apidoc-antora-extension
 #    openapi-generator:
 #      config: config/openapi-generator/asciidoc.yaml
- #     templates: templates/openapi-generator/asciidoc
- # - id: lunr-search
- #   require: ./lib/lunr/lunr-antora-extension
- #   enabled: false
+#     templates: templates/openapi-generator/asciidoc
+# - id: lunr-search
+#   require: ./lib/lunr/lunr-antora-extension
+#   enabled: false
 
 asciidoc:
   attributes:
@@ -38,7 +38,7 @@ asciidoc:
   #- ./lib/apidoc/apidoc-asciidoc-extension
 
 content:
-  edit_url: false
+  edit_url: ~
   sources:
 
   ### Local content
