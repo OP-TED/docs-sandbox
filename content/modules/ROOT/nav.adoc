@@ -3,7 +3,7 @@
 
 
 * [.separated]#**Training Environment**#
-* xref:training::index.adoc[Training Documents]
+* xref:training::index.adoc[Training Documentation]
 
 ////
 * xref:index.adoc[Home]
