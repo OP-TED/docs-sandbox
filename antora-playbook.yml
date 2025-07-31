@@ -1,6 +1,6 @@
 site:
   title: TED Developer Documentation
-  url: https://docs.ted.europa.eu
+  https://docs.ted.europa.eu/docs-sandbox/home/index.html
   start_page: home::index.adoc
   robots: disallow
 
