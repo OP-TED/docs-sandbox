@@ -38,7 +38,7 @@ asciidoc:
   #- ./lib/apidoc/apidoc-asciidoc-extension
 
 content:
-  edit_url: ~
+  edit_url: false
   sources:
 
   ### Local content
@@ -50,9 +50,9 @@ content:
     start_path: /
     branches: materials, main
     ### eForms SDK
-  - url: C:\Users\paterni\Code\eforms-docs\
-    start_path: /
-    branches: 1.13.x, 1.13.x-generated,1.12.x, 1.12.x-generated,1.11.x, 1.11.x-generated, 1.10.x, 1.10.x-generated, 1.9.x, 1.9.x-generated, 1.8.x, 1.8.x-generated, 1.7.x, 1.7.x-generated, 1.6.x, 1.6.x-generated, 1.5.x, 1.5.x-generated , 1.4.x, 1.4.x-generated, main
+    #- url: C:\Users\paterni\Code\eforms-docs\
+    #  start_path: /
+    #  branches: 1.13.x, 1.13.x-generated,1.12.x, 1.12.x-generated,1.11.x, 1.11.x-generated, 1.10.x, 1.10.x-generated, 1.9.x, 1.9.x-generated, 1.8.x, 1.8.x-generated, 1.7.x, 1.7.x-generated, 1.6.x, 1.6.x-generated, 1.5.x, 1.5.x-generated , 1.4.x, 1.4.x-generated, main
     # The "main" branch contains the eForms FAQ and RoadMap
 
     ###  ESPD
@@ -73,9 +73,9 @@ content:
     start_path: docs/antora
     branches: update-reuse-docs
     ### ePO Documentation
-  - url: C:\Users\paterni\Code\epo-docs\
-    start_path: /
-    branches: main-wf, v*, pre-v5.0.0, wg-meetings, workflow-imp-cosmetic-changes
+    #- url: C:\Users\paterni\Code\epo-docs\
+    #  start_path: /
+    #  branches: main-wf, v*, pre-v5.0.0, wg-meetings, workflow-imp-cosmetic-changes
 
 urls:
   redirect_facility: static
