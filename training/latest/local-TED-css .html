@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Docs Training Session Recordings :: TED Developer Documentation</title>
-    <link rel="canonical" href="https://docs.ted.europa.eu/training/latest/sessions.html">
+    <title>Untitled :: TED Developer Documentation</title>
+    <link rel="canonical" href="https://docs.ted.europa.eu/training/latest/local-TED-css%20.html">
     <meta name="generator" content="Antora 3.1.2">
     <link rel="stylesheet" href="../../_/css/site.css">
     <link rel="stylesheet" href="../../_/css/custom.css">
@@ -135,15 +135,11 @@
 <button class="nav-toggle"></button>
   <a href="../../home/index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
-  <ul>
-    <li><a href="index.html">Training Docs</a></li>
-    <li><a href="sessions.html">Docs Training Session Recordings</a></li>
-  </ul>
 </nav>
 <div class="page-versions">
   <button class="version-menu-toggle" title="Show other versions of page">materials</button>
   <div class="version-menu">
-    <a class="version is-current" href="sessions.html">materials</a>
+    <a class="version is-current" href="local-TED-css%20.html">materials</a>
     <a class="version is-missing" href="../main/index.html">main</a>
   </div>
 </div>
@@ -153,25 +149,181 @@
   <div class="toc-menu"></div>
 </aside>
     <article class="doc">
-<h1 class="page">Docs Training Session Recordings</h1>
-<div class="sect1">
-<h2 id="_the_training_was_held_in_4_sessions"><a class="anchor" href="#_the_training_was_held_in_4_sessions"></a>The training was held in 4 sessions:</h2>
-<div class="sectionbody">
 <div class="paragraph">
-<p>Click on the links to access the recordings</p>
+<p><strong>How to make your local dev docs website look and function just like the
+production site</strong></p>
 </div>
 <div class="paragraph">
-<p><a href="https://eceuropaeu.sharepoint.com/:v:/r/teams/GRP-OP.C.3/Shared%20Documents/Tools%20of%20the%20Trade/Trainings/Writing%20for%20the%20Docs%20Portal/Course%20Materials/Session%20Recordings/Docs%20Training%20Session%201-20240409_140307-Meeting%20Recording.mp4?csf=1&amp;web=1&amp;e=vyD5yn">Training Session 1</a></p>
+<p>The css and other site functionality comes from two sources:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The antora.eui repository: the full ccs, javascript, etc elements
+provided in a release zip file.</p>
+</li>
+<li>
+<p>The OP-TED.github.io (supplemental-ui), small modifications or
+Asciidoc elements that for some reason can’t be placed in the antora.eui
+release file.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p><a href="https://eceuropaeu.sharepoint.com/:v:/r/teams/GRP-OP.C.3/Shared%20Documents/Tools%20of%20the%20Trade/Trainings/Writing%20for%20the%20Docs%20Portal/Course%20Materials/Session%20Recordings/Docs%20Training%20Session%203-20240416_141511-Meeting%20Recording.mp4?csf=1&amp;web=1&amp;e=MHcnBo">Training Session 2</a></p>
+<p>The site generation process</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>fetches the latest release ui-bundle zip file from the
+<a href="https://github.com/OP-TED/antora-eui/releases">OP-TED/antora-eui</a>
+repository (the location is specified in the antora-playbook.yml file).</p>
+</li>
+<li>
+<p>Fetches the supplemental-ui settings from the site generation repo and
+applies these on top of the antora-eui ones, overwriting or adding to
+them.</p>
+</li>
+</ol>
 </div>
 <div class="paragraph">
-<p><a href="https://eceuropaeu.sharepoint.com/:v:/r/teams/GRP-OP.C.3/Shared%20Documents/Tools%20of%20the%20Trade/Trainings/Writing%20for%20the%20Docs%20Portal/Course%20Materials/Session%20Recordings/Docs%20Training%20Session%202-20240411_140345-Meeting%20Recording.mp4?csf=1&amp;web=1&amp;e=6Jl6vE">Training Session 3</a></p>
+<p>This process does not work entirely when generating a site locally,
+despite the settings being in the local-antora-playbook.yml (not sure
+why) but this is what you need to do to reproduce them:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>If you have never run the local site generation process locally, do so
+now in a terminal window from the docs-sandbox. Do this in VSC from
+within the docs-sandbox repository.<br>
+<strong><em>antora local-antora-playbook.yml</em></strong><br>
+This will generate a new folder, “build” in the file structure.</p>
+</li>
+<li>
+<p>Download the latest ui-bundle.zip file from the antora-eui repo. Unzip
+it on your machine and copy the contents to the folder under “build”
+that has just “_” as its name. You will see a set of similar files, just
+overwrite these.</p>
+</li>
+<li>
+<p>Now go to the OP-tED.github.io repository download the custom.css file
+from the supplemental-ui/css folder. Put this into the css folder :
+build/_/css in the docs-sandbox.</p>
+</li>
+</ol>
 </div>
 <div class="paragraph">
-<p><a href="https://eceuropaeu.sharepoint.com/:v:/r/teams/GRP-OP.C.3/Shared%20Documents/Tools%20of%20the%20Trade/Trainings/Writing%20for%20the%20Docs%20Portal/Course%20Materials/Session%20Recordings/Docs%20Training%20Session%204-20240418_140645-Meeting%20Recording.mp4?csf=1&amp;web=1&amp;e=AdbWRA">Training Session 4</a></p>
+<p>The local-antora-playbook is currently set to look for the ui-bundle.zip
+and custom.css in two files under the content folder but as mentioned,
+the generation does not work properly. But… a ui bundle needs to be
+specified, so the settings still need to be in the yml file.</p>
 </div>
+<div class="paragraph">
+<p>Note: When you clone docs-sandbox, neither the build folder nor the
+local-antora-playbook.yml will be cloned because they should be added to
+the .gitignore file locally and not pushed to the remote repository.</p>
+</div>
+<div class="paragraph">
+<p><strong>Local-antora-playbook.yml</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">site:
+    title: TED Sandbox Documentation
+    url: https://docs.ted.europa.eu
+    start_page: home::index.adoc
+
+asciidoc:
+    attributes:
+        ### Site sub-title (displayed next to the site.title at the header)
+        page-site-subtitle: Documentation for TED developers and eSenders
+        ### Component's Latest Version
+#
+        # We want to know the latest version of each component so we can create
+        a redirect for the latest version.
+
+        # Such a redirect would be useful for users that want to bookmark a link to the latest documentation for a component.
+
+        # For example, we would be able to provide a link of the form:
+https://docs.ted.europa.eu/eforms/latest.
+
+        # It is also nice to be able to indicate a component's version in the main navigation panel (modules/ROOT/nav.adoc).
+
+#
+
+        # However, we do not currently have any other way to determine the latest version of a component outside a page in the component itself.
+
+        # So, as a workaround, we store the latest version of each component in these site-wide asciidoc attributes.
+
+        # The downside is that we have to update these attributes whenever we release a new version of a component.
+        #
+        eforms_latest_version: '1.13'
+        epo_latest_version: '5.0.0'
+        espd_latest_version: '5.1.0'
+        #
+
+    # extensions:
+        #- ./lib/apidoc/apidoc-asciidoc-extension
+
+content:
+    edit_url: false
+    sources:
+
+### Local content
+- url: .
+  start_path: content
+  branches: HEAD
+
+### Training Docs
+- url: C:\Users\paterni\Code\training-docs\
+  start_path: /
+  branches: materials, main
+
+### eForms SDK
+#- url: C:\Users\paterni\Code\eforms-docs\
+ # start_path: /
+ # branches: 1.13.x, 1.13.x-generated,1.12.x, 1.12.x-generated,1.11.x, 1.11.x-generated, 1.10.x, 1.10.x-generated, 1.9.x, 1.9.x-generated, 1.8.x, 1.8.x-generated, 1.7.x, 1.7.x-generated, 1.6.x, 1.6.x-generated, 1.5.x, 1.5.x-generated , 1.4.x, 1.4.x-generated, main
+ # The "main" branch contains the eForms FAQ and RoadMap
+
+### ESPD
+- url: C:\Users\paterni\Code\espd-docs\
+  start_path: /
+  branches: main_5.1.x, v1.0.x, v2.0.x, v2.1.x, v3.0.x, v3.1.x, v3.2.x, v3.3.x, v4.0.x, v5.0.x, v5.1.x
+
+### TED API
+- url: C:\Users\paterni\Code\tedapi-docs\
+  start_path: /
+  branches: v2.0, v3.0 # The "main" branch contains unversioned content.
+
+### model2owl
+#- url: C:\Users\paterni\Code\ted-model2owl-docs
+#  start_path: /
+#  branches: main
+
+### TED Open Data Service
+- url: C:\Users\paterni\Code\ted-rdf-docs\
+  start_path: docs/antora
+  branches: update-reuse-docs
+
+### ePO Documentation
+#- url: C:\Users\paterni\Code\epo-docs\
+#  start_path: /
+#  branches: main-wf, v*, pre-v5.0.0, wg-meetings, workflow-imp-cosmetic-changes
+
+urls:
+    redirect_facility: static
+    # html_extension_style: indexify
+    latest_version_segment: latest
+
+ui:
+    bundle:
+        url: ./content/ui/ui-bundle.zip
+        snapshot: true
+    supplemental_files: ./content/supplemental-ui
+
+git:
+    fetch_concurrency: 1</code></pre>
 </div>
 </div>
 </article>
